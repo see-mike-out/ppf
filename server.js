@@ -165,7 +165,7 @@ app.get('/change_language/:ln', function(req, res) {
 })
 
 //static directories
-app.use(express.static(__dirname + '/public'));
+// app.use(express.static(__dirname + '/public'));
 
 //route error handling
 app.use(function(req, res) { //404 error
