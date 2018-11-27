@@ -1,0 +1,201 @@
+<div class="container">
+  <div class="row">
+    <div class="l3 m12 s12">
+      <div class="content-wrap">
+        {{#if is_en}}
+          <h1>By Country</h1>
+        {{else}}
+          <h1>나라별</h1>
+        {{/if}}
+      </div>
+    </div>
+    <div class="l9 m12 s12">
+      <div class="content-wrap">
+        <div class="sublist_foldable" data-open="false">
+          <div class="folder" id="country_list">
+            {{#if is_en}}
+              <span>Choose 2 countries to compare</span>
+            {{else}}
+              <span>비교할 두 나라를 골라보세요</span>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    
+    <div class="l12 m12 s12">
+      <div class="content-wrap">
+        <p class="helper">
+          {{#if is_en}}
+            If you try to add another country when two countries are already selected, then the earlier of those already selected is removed.
+          {{else}}
+            이미 두 개의 나라가 선택되어 있을 때 한 국가를 추가하면, 기존에 추가된 나라들 중 가장 먼저 추가된 나라가 제거됩니다.
+          {{/if}}
+        </p>
+        <div id="cmp_area" data-show="false">
+          <h2 class="table_title"></h2>
+          <h3>{{#if is_en}}Ratio of Greenhouse Gas Emissions{{else}}온실가스 배출량 비중{{/if}}</h3>
+          <div id="cmp_cumulate" class="cmp_cumulate">
+            <div class="cmp_cumulate_bars bar_1">
+              <div class="cmp_cumulate_name"></div>
+              <div class="cmp_cumulate_bar"></div>
+            </div>
+            <div class="cmp_cumulate_bars bar_2">
+              <div class="cmp_cumulate_name"></div>
+              <div class="cmp_cumulate_bar"></div>
+            </div>
+            
+          <div id="cumul_tooltip" data-show="false">
+            <span class="value"></span>
+          </div>
+          </div>
+          <h3>{{#if is_en}}Total{{else}}전체{{/if}}</h3>
+          <div id="cmp_tot" class="cmp_section">
+            <div id="cmp_perTot" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgTot" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadTot" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>{{#if is_en}}Agriculture{{else}}농업{{/if}}</h3>
+          <div id="cmp_agr" class="cmp_section">
+            <div id="cmp_perAgr" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgAgr" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadAgr" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>{{#if is_en}}Manufacturing & Construction{{else}}제조건축업{{/if}}</h3>
+          <div id="cmp_mnf" class="cmp_section">
+            <div id="cmp_perMnf" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>  
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgMnf" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadMnf" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>{{#if is_en}}Energy{{else}}에너지산업{{/if}}</h3>
+          <div id="cmp_eng" class="cmp_section">
+            <div id="cmp_perEng" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgEng" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadEng" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>{{#if is_en}}Transport{{else}}수송{{/if}}</h3>
+          <div id="cmp_tsp" class="cmp_section">
+            <div id="cmp_perTsp" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgTsp" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadTsp" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>{{#if is_en}}Others{{else}}비제조산업{{/if}}</h3>
+          <div id="cmp_etc" class="cmp_section">
+            <div id="cmp_perEtc" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: kg, CO2eq / 1,000 USD{{else}}단위: CO2 환산 kg / 1,000 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_ghgEtc" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Tonnes, CO2eq{{else}}단위: CO2 환산 톤{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_vadEtc" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <p class="helper">{{#if is_en}}Unit: Millions, USD{{else}}단위: 백만 미국달러{{/if}}</p>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/hmde/js/hmde_utility.js"></script>
+<script src="/hmde/js/bycountry_control.js"></script>
+<script>
+  create_country_list('#country_list', '#cmp_area', "{{ln}}")
+  $('.sublist_foldable')
+    .on('mouseover', function() { $(this).attr('data-open', 'true') })
+    .on('mouseout', function() { $(this).attr('data-open', 'false') });
+</script>

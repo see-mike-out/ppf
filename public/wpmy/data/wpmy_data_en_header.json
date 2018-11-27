@@ -1,0 +1,337 @@
+[
+  {
+    "code": "category",
+    "tableType": "text",
+    "name": "Category"
+  },
+  {
+    "code": "abbr",
+    "tableType": "text",
+    "name": "Abbreviation"
+  },
+  {
+    "code": "name",
+    "tableType": "text",
+    "name": "Country"
+  },
+  {
+    "code": "gini_value",
+    "tableType": "float(3)",
+    "name": "Gini Coefficient"
+  },
+  {
+    "code": "gini_year",
+    "tableType": "text",
+    "name": "Gini (Year)"
+  },
+  {
+    "code": "gini_sour",
+    "tableType": "text",
+    "name": "Gini (Source)"
+  },
+  {
+    "code": "gdpc",
+    "tableType": "float(0)",
+    "name": "GDP per Capita"
+  },
+  {
+    "code": "gdpc_sour",
+    "tableType": "text",
+    "name": "GDPpC (Source)"
+  },
+  {
+    "code": "expo_value",
+    "tableType": "float(4)",
+    "name": "Lorenz Curve Power"
+  },
+  {
+    "code": "gnipc_f",
+    "tableType": "float(0)",
+    "name": "GNI per Capita, Female"
+  },
+  {
+    "code": "gnipc_m",
+    "tableType": "float(0)",
+    "name": "GNI per Capita, Male"
+  },
+  {
+    "code": "gnipc_b",
+    "tableType": "float(0)",
+    "name": "GNI per Capita, Both Sexes"
+  },
+  {
+    "code": "gnipc_diff_fm",
+    "tableType": "float(0)",
+    "name": "GNIpC, Diff, F-M"
+  },
+  {
+    "code": "gnipc_diff_fb",
+    "tableType": "float(0)",
+    "name": "GNIpC, Diff, F-B"
+  },
+  {
+    "code": "gnipc_diff_mb",
+    "tableType": "float(0)",
+    "name": "GNIpC, Diff, M-B"
+  },
+  {
+    "code": "gnipc_ratio_fm",
+    "tableType": "ratio(2)",
+    "name": "GNIpC, Ratio, F/M"
+  },
+  {
+    "code": "gnipc_ratio_fb",
+    "tableType": "ratio(2)",
+    "name": "GNIpC, Ratio, F/B"
+  },
+  {
+    "code": "gnipc_ratio_mb",
+    "tableType": "ratio(2)",
+    "name": "GNIpC, Ratio, M/B"
+  },
+  {
+    "code": "gni_f",
+    "tableType": "float(1)",
+    "name": "GNI, Female"
+  },
+  {
+    "code": "gni_m",
+    "tableType": "float(1)",
+    "name": "GNI, Male"
+  },
+  {
+    "code": "gni_b",
+    "tableType": "float(1)",
+    "name": "GNI, Both Sexes"
+  },
+  {
+    "code": "gni_diff_fm",
+    "tableType": "float(1)",
+    "name": "GNI, Diff, F-M"
+  },
+  {
+    "code": "gni_diff_fb",
+    "tableType": "float(1)",
+    "name": "GNI, Diff, F-B"
+  },
+  {
+    "code": "gni_diff_mb",
+    "tableType": "float(1)",
+    "name": "GNI, Diff, M-B"
+  },
+  {
+    "code": "gni_ratio_fm",
+    "tableType": "ratio(2)",
+    "name": "GNI, Ratio, F/M"
+  },
+  {
+    "code": "gni_ratio_fb",
+    "tableType": "ratio(2)",
+    "name": "GNI, Ratio, F/B"
+  },
+  {
+    "code": "gni_ratio_mb",
+    "tableType": "ratio(2)",
+    "name": "GNI, Ratio, M/B"
+  },
+  {
+    "code": "scale_f",
+    "tableType": "float(2)",
+    "name": "Scale, Female"
+  },
+  {
+    "code": "p1_f",
+    "tableType": "float(1)",
+    "name": "Lowest 10, Female"
+  },
+  {
+    "code": "p2_f",
+    "tableType": "float(1)",
+    "name": "Lowest 20, Female"
+  },
+  {
+    "code": "p3_f",
+    "tableType": "float(1)",
+    "name": "Lowest 30, Female"
+  },
+  {
+    "code": "p4_f",
+    "tableType": "float(1)",
+    "name": "Lowest 40, Female"
+  },
+  {
+    "code": "p5_f",
+    "tableType": "float(1)",
+    "name": "Lowest 50, Female"
+  },
+  {
+    "code": "p6_f",
+    "tableType": "float(1)",
+    "name": "Lowest 60, Female"
+  },
+  {
+    "code": "p7_f",
+    "tableType": "float(1)",
+    "name": "Lowest 70, Female"
+  },
+  {
+    "code": "p8_f",
+    "tableType": "float(1)",
+    "name": "Lowest 80, Female"
+  },
+  {
+    "code": "p9_f",
+    "tableType": "float(1)",
+    "name": "Lowest 90, Female"
+  },
+  {
+    "code": "p10_f",
+    "tableType": "float(1)",
+    "name": "Total, Female"
+  },
+  {
+    "code": "scale_m",
+    "tableType": "float(2)",
+    "name": "Scale, Male"
+  },
+  {
+    "code": "p1_m",
+    "tableType": "float(1)",
+    "name": "Lowest 10, Male"
+  },
+  {
+    "code": "p2_m",
+    "tableType": "float(1)",
+    "name": "Lowest 20, Male"
+  },
+  {
+    "code": "p3_m",
+    "tableType": "float(1)",
+    "name": "Lowest 30, Male"
+  },
+  {
+    "code": "p4_m",
+    "tableType": "float(1)",
+    "name": "Lowest 40, Male"
+  },
+  {
+    "code": "p5_m",
+    "tableType": "float(1)",
+    "name": "Lowest 50, Male"
+  },
+  {
+    "code": "p6_m",
+    "tableType": "float(1)",
+    "name": "Lowest 60, Male"
+  },
+  {
+    "code": "p7_m",
+    "tableType": "float(1)",
+    "name": "Lowest 70, Male"
+  },
+  {
+    "code": "p8_m",
+    "tableType": "float(1)",
+    "name": "Lowest 80, Male"
+  },
+  {
+    "code": "p9_m",
+    "tableType": "float(1)",
+    "name": "Lowest 90, Male"
+  },
+  {
+    "code": "p10_m",
+    "tableType": "float(1)",
+    "name": "Total, Male"
+  },
+  {
+    "code": "scale_b",
+    "tableType": "float(2)",
+    "name": "Scale, Both Sexes"
+  },
+  {
+    "code": "p1_b",
+    "tableType": "float(1)",
+    "name": "Lowest 10, Both Sexes"
+  },
+  {
+    "code": "p2_b",
+    "tableType": "float(1)",
+    "name": "Lowest 20, Both Sexes"
+  },
+  {
+    "code": "p3_b",
+    "tableType": "float(1)",
+    "name": "Lowest 30, Both Sexes"
+  },
+  {
+    "code": "p4_b",
+    "tableType": "float(1)",
+    "name": "Lowest 40, Both Sexes"
+  },
+  {
+    "code": "p5_b",
+    "tableType": "float(1)",
+    "name": "Lowest 50, Both Sexes"
+  },
+  {
+    "code": "p6_b",
+    "tableType": "float(1)",
+    "name": "Lowest 60, Both Sexes"
+  },
+  {
+    "code": "p7_b",
+    "tableType": "float(1)",
+    "name": "Lowest 70, Both Sexes"
+  },
+  {
+    "code": "p8_b",
+    "tableType": "float(1)",
+    "name": "Lowest 80, Both Sexes"
+  },
+  {
+    "code": "p9_b",
+    "tableType": "float(1)",
+    "name": "Lowest 90, Both Sexes"
+  },
+  {
+    "code": "p10_b",
+    "tableType": "float(1)",
+    "name": "Total, Both Sexes"
+  },
+  {
+    "code": "f_m",
+    "tableType": "float(10)",
+    "name": "F to M"
+  },
+  {
+    "code": "f_b",
+    "tableType": "float(10)",
+    "name": "F to B"
+  },
+  {
+    "code": "m_f",
+    "tableType": "float(10)",
+    "name": "M to F"
+  },
+  {
+    "code": "m_b",
+    "tableType": "float(10)",
+    "name": "M to B"
+  },
+  {
+    "code": "pop100_f",
+    "tableType": "float(0)",
+    "name": "Pop100, Female"
+  },
+  {
+    "code": "pop100_m",
+    "tableType": "float(0)",
+    "name": "Pop100, Male"
+  },
+  {
+    "code": "pop100_b",
+    "tableType": "float(0)",
+    "name": "Pop100, Both Sexes"
+  }
+]

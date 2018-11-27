@@ -1,0 +1,117 @@
+[
+  {
+    "code": "category",
+    "tableType": "text",
+    "name": "분류"
+  },
+  {
+    "code": "stAbbr",
+    "tableType": "text",
+    "name": "국가코드"
+  },
+  {
+    "code": "stName",
+    "tableType": "text",
+    "name": "국가명"
+  },
+  {
+    "code": "ghgTot",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (전체)"
+  },
+  {
+    "code": "ghgAgr",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (농업)"
+  },
+  {
+    "code": "ghgMnf",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (제조건축업)"
+  },
+  {
+    "code": "ghgEng",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (에너지산업)"
+  },
+  {
+    "code": "ghgTsp",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (수송)"
+  },
+  {
+    "code": "ghgEtc",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (비제조 산업)"
+  },
+  {
+    "code": "ghgIdw",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (폐기물)"
+  },
+  {
+    "code": "ghgIda",
+    "tableType": "float(2)",
+    "name": "온실가스 배출량 (공업부가)"
+  },
+  {
+    "code": "vadTot",
+    "tableType": "float(4)",
+    "name": "부가가치 (전체)"
+  },
+  {
+    "code": "vadAgr",
+    "tableType": "float(4)",
+    "name": "부가가치 (농업)"
+  },
+  {
+    "code": "vadMnf",
+    "tableType": "float(4)",
+    "name": "부가가치 (제조건축업)"
+  },
+  {
+    "code": "vadEng",
+    "tableType": "float(4)",
+    "name": "부가가치 (에너지산업)"
+  },
+  {
+    "code": "vadTsp",
+    "tableType": "float(4)",
+    "name": "부가가치 (수송)"
+  },
+  {
+    "code": "vadEtc",
+    "tableType": "float(4)",
+    "name": "부가가치 (비제조산업)"
+  },
+  {
+    "code": "perTot",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (전체)"
+  },
+  {
+    "code": "perAgr",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (농업)"
+  },
+  {
+    "code": "perMnf",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (제조건축업)"
+  },
+  {
+    "code": "perEng",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (에너지산업)"
+  },
+  {
+    "code": "perTsp",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (수송)"
+  },
+  {
+    "code": "perEtc",
+    "tableType": "float(4)",
+    "name": "단위 수입당 온실가스 배출량 (비제조산업)"
+  }
+]

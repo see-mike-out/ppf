@@ -1,0 +1,169 @@
+<div class="container">
+  <div class="row">
+    <div class="l3 m12 s12">
+      <div class="content-wrap">
+        {{#if is_en}}
+          <h1>By Country</h1>
+        {{else}}
+          <h1>나라별</h1>
+        {{/if}}
+      </div>
+    </div>
+    <div class="l9 m12 s12">
+      <div class="content-wrap">
+        <div class="sublist_foldable" data-open="false">
+          <div class="folder" id="country_list">
+            {{#if is_en}}
+              <span>Choose 2 countries to compare</span>
+            {{else}}
+              <span>비교할 두 나라를 골라보세요</span>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    
+    <div class="l12 m12 s12">
+      <div class="content-wrap">
+        <p class="helper">
+          {{#if is_en}}
+            If you try to add another country when two countries are already selected, then the earlier of those already selected is removed.
+          {{else}}
+            이미 두 개의 나라가 선택되어 있을 때 한 국가를 추가하면, 기존에 추가된 나라들 중 가장 먼저 추가된 나라가 제거됩니다.
+          {{/if}}
+        </p>
+        <div id="cmp_area" data-show="false">
+          <h2 class="table_title"></h2>
+          <h3>Basic Information</h3>
+          <div id="cmp_basic" class="cmp_section">
+            <div id="cmp_gdpcUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_pvUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_mwHourlyUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>Big Mac</h3>
+          <div id="cmp_bm" class="cmp_section">
+            <div id="cmp_bmUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_perBm" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_forBm" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>Coca-cola 1.5L</h3>
+          <div id="cmp_cc" class="cmp_section">
+            <div id="cmp_ccUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_perCc" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_forCc" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          
+          <h3>Adidas Training Pants</h3>
+          <div id="cmp_ad" class="cmp_section">
+            <div id="cmp_adUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_perAd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_forAd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>Ikea's Bed Set</h3>
+          <div id="cmp_kb" class="cmp_section">
+            <div id="cmp_kbUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_perKb" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_forKb" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+          
+          <h3>Dell's 15-inch Laptop</h3>
+          <div id="cmp_dp" class="cmp_section">
+            <div id="cmp_dpUsd" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_perDp" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+            <div id="cmp_forDp" class="cmp_subsection">
+              <div class="cmp_bars"><div class="cmp_bar_1"><div class="cmp_bar"></div></div><div class="cmp_bar_2"><div class="cmp_bar"></div></div></div>
+              <div class="cmp_bar_names"><div class="cmp_name_1"><div class="cmp_name"></div><div class="cmp_value"></div></div><div class="cmp_name_2"><div class="cmp_name"></div><div class="cmp_value"></div></div></div>
+              <div class="cmp_bar_title"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/hmml/js/hmml_utility.js"></script>
+<script src="/hmml/js/bycountry_control.js"></script>
+<script>
+  create_country_list('#country_list', '#cmp_area', "{{ln}}")
+  $('.sublist_foldable')
+    .on('mouseover', function() { $(this).attr('data-open', 'true') })
+    .on('mouseout', function() { $(this).attr('data-open', 'false') });
+</script>

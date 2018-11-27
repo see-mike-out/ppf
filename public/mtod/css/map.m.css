@@ -1,0 +1,209 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+  background: #222;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+#header-wrap {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+
+#mike-project {
+  display: block;
+  vertical-align: top;
+  width: auto;
+  padding: 20px;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+#project-name {
+  display: block;
+  vertical-align: top;
+  width: auto;
+  padding: 0 20px 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+#mike-project a,
+#project-name a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#documentation {
+  display: block;
+  vertical-align: top;
+  width: auto;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: left;
+}
+
+#documentation a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  transition: .3s;
+}
+
+#documentation a:hover {
+  color: #FF9F1C;
+  text-decoration: none;
+}
+
+#content-wrap {
+  width: 100%;
+  margin: 10px 0 40px 0;
+  height: auto;
+  color: #fff
+}
+
+#content-wrap h4 {
+  line-height: 100%;
+  margin: 0 0 20px 0;
+}
+
+.content-item {
+  margin: 0 0 50px 0;
+}
+
+.nav {
+  display: flex;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: 1px #fff solid;
+}
+
+.nav-item {
+  text-align: center;
+  border-width: 0 1px 0 0;
+  margin: 0 -2px 0 0;
+  border-color: #fff;
+  border-style: solid;
+  padding: 5px 11px 5px 11px;
+}
+
+.nav-item:last-child {
+  text-align: center;
+  border-width: 0;
+  margin: 0;
+  padding: 5px 11px 5px 11px;
+  border-radius: 0 5px 5px 0;
+}
+
+.nav-item:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.nav-on {
+  background-color: #fff;
+  color: #222;
+}
+
+#map-content {
+  text-align: center;
+}
+
+#map-content svg .map-item {
+  stroke-width: 0.8;
+  stroke: #222;
+  stroke-alignment: inner;
+}
+
+#map-content svg .current-area {
+  stroke-width: 2;
+  stroke: #f3de2c;
+}
+
+#detail-content {
+  border-radius: 5px;
+  padding: 13px;
+  background: #000;
+}
+
+#detail-content h5 {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
+#detail-content h5 strong {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+#detail-content h6 {
+  font-size: 14px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 7px;
+  padding-top: 16px;
+  margin-bottom: 13px;
+}
+
+.detail-bar-box {
+  display: block;
+  margin: 0 0 11px 0;
+  font-size: 13px;
+  height: 24px;
+}
+
+.detail-bar-box-name {
+  display: block;
+  height: 13px;
+  width: 95%;
+  padding-left: 5%;
+  margin: 0 0 7px 0;
+  line-height: 100%;
+}
+.detail-bar-box-bar-wrap {
+  display: block;
+  height: 4px;
+  width: 95%;
+  padding: 0 0 0 5%;
+  margin: 0;
+}
+.detail-bar-box-bar-back {
+  display: block;
+  height: 4px;
+  margin: 0;
+  background-color: #222;
+}
+.detail-bar-box-bar {
+  display: block;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+#copy {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #ddd;
+  text-align: center;
+}
+
+#copy h5 {
+  font-size: 14px;
+  line-height: 100%;
+  margin: 0 0 20px 0;
+}
+
+#copy p {
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0 0 8px 0;
+  line-height: 160%;
+}
+
+#copy p a {
+  color: #2EC4B6;
+}

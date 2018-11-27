@@ -1,0 +1,121 @@
+<div class="container">
+  <div class="row">
+    <div class="l12 m12 s12">
+      <div class="content-wrap">
+        {{#if is_en}}
+          <h1>Calculator</h1>
+        {{else}}
+          <h1>계산기</h1>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="l3 m6 s12">
+      <div class="content-wrap calculator-wrap">
+        {{#if is_en}}
+          <h3>Select a country.</h3>
+        {{else}}
+          <h3>나라를 선택하세요.</h3>
+        {{/if}}
+        <div class="sublist_foldable relative" data-open="false">
+          <div class="folder" id="country_list">
+            <span class="list_header">
+              {{#if is_en}}List of Countries{{else}}국가 목록{{/if}}
+            </span>
+            {{#if is_en}}
+              <span>List of Countries</span>
+            {{else}}
+              <span>국가 목록</span>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="l3 m6 s12">
+      <div class="content-wrap calculator-wrap" id="income-input" data-show="false">
+        {{#if is_en}}
+          <h3>Enter your income.</h3>
+        {{else}}
+          <h3>수입을 입력하세요.</h3>
+        {{/if}}
+        <div class="calculator-input-wrap">
+          <input type="number" class="calculator-input" id="calculator-income" />
+          <span id="currency"> USD</span>
+        </div>
+        <button onclick="calculate()">
+          {{#if is_en}}Calculate{{else}}계산하기{{/if}}
+        </button>
+      </div>
+    </div>
+    
+    <div class="l6 m12 s12">
+      <div class="content-wrap calculator-wrap" id="calc-result" data-show="false">
+        {{#if is_en}}
+          <h3>Based on your income, the amount of your greenhouse gas emission is ... </h3>
+          <p class="helper">You can change profession sector in the below select box.</p>
+        {{else}}
+          <h3>수입에 기반한 당신의 온실가스 배출량은 ...</h3>
+          <p class="helper">아래 선택 박스에서 직업군을 변경할 수 있습니다.</p>
+        {{/if}}
+        <div id="calc-result-sector">
+          <select id="calc-result-sector-selector" onchange="change_sector()">
+            <option value="tot" selected>{{#if is_en}}General{{else}}일반{{/if}}</option>
+            <option value="agr">{{#if is_en}}Agriculture{{else}}농업{{/if}}</option>
+            <option value="mnf">{{#if is_en}}Manufacturing & Construction{{else}}제조건축업{{/if}}</option>
+            <option value="eng">{{#if is_en}}Energy{{else}}에너지산업{{/if}}</option>
+            <option value="tsp">{{#if is_en}}Transport{{else}}수송{{/if}}</option>
+            <option value="etc">{{#if is_en}}Others{{else}}비제조산업{{/if}}</option>
+          </select>
+        </div>
+        <h3 class="calc-equiv">{{#if is_en}}And it's equivalent to{{else}}그리고 다음과 같은 양입니다.{{/if}}</h3>
+        <div id="calc-result">
+          <div id="calc-result-emit">
+            <div class="emoji">🌫</div>
+            <div class="title">{{#if is_en}}Emmissions{{else}}{{/if}}</div>
+            <div class="value"></div>
+            <div class="content"></div>
+          </div>
+          <div id="calc-result-driving">
+            <div class="emoji">🚗</div>
+            <div class="title">{{#if is_en}}Distance Driven{{else}}{{/if}}</div>
+            <div class="value"></div>
+            <div class="content"></div>
+          </div>
+          <div id="calc-result-bulb">
+            <div class="emoji">💡</div>
+            <div class="title">{{#if is_en}}Fluorescent Bulb{{else}}{{/if}}</div>
+            <div class="value"></div>
+            <div class="content"></div>
+            <p class="helper">
+              {{#if is_en}}1 falsh indicates 1 day.{{else}}1번 깜빡임은 1일입니다.{{/if}}
+            </p>
+          </div>
+        </div>
+        <p class="helper">
+          {{#if is_en}}
+            Fuel Efficiency: 11.1km/l (28 mpg) (combined, TOYOTA Camry XLE 2.5-Liter/4-Cylinder/6-Speed-Automatic, <a href="http://www.toyota.com/camry/features.html#!/mpg/2540" target="_blank">Source</a>). Flurescent Bulb: 5 Watt per hour. Specific calclation rates from US Energy Protection Agency (<a href="http://www.epa.gov/cleanenergy/energy-resources/refs.html" target="_blank">Source</a>)
+          {{else}}
+            연비: 11.1 km/l(복합, 도요타 캠리 XLE 2.5CC/4기관/6단자동변속, <a href="http://www.toyota.com/camry/features.html#!/mpg/2540" target="_blank">출처</a>). 형광등: 시간 당 5 와트. 자세한 환산비율은 미국 에너지보호청 US Energy Protection Agency (<a href="http://www.epa.gov/cleanenergy/energy-resources/refs.html" target="_blank">출처</a>)을 참고했습니다.
+          {{/if}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/hmde/js/hmde_utility.js"></script>
+<script src="/hmde/js/calculator_control.js"></script>
+<script>
+  create_country_list('#country_list', "{{ln}}");
+  $('.sublist_foldable')
+    .on('mouseover', function() {
+      $(this).attr('data-open', 'true');
+    })
+    .on('mouseout', function() { 
+      $(this).attr('data-open', 'false');
+    });
+</script>

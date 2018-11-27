@@ -1,0 +1,337 @@
+[
+  {
+    "code": "category",
+    "tableType": "text",
+    "name": "분류"
+  },
+  {
+    "code": "abbr",
+    "tableType": "text",
+    "name": "약어"
+  },
+  {
+    "code": "name",
+    "tableType": "text",
+    "name": "국가"
+  },
+  {
+    "code": "gini_value",
+    "tableType": "float(3)",
+    "name": "지니계수"
+  },
+  {
+    "code": "gini_year",
+    "tableType": "text",
+    "name": "지니계수 (기준연도)"
+  },
+  {
+    "code": "gini_sour",
+    "tableType": "text",
+    "name": "지니계수 (출처)"
+  },
+  {
+    "code": "gdpc",
+    "tableType": "float(0)",
+    "name": "1인당 GDP"
+  },
+  {
+    "code": "gdpc_sour",
+    "tableType": "text",
+    "name": "1인당 GDP (출처)"
+  },
+  {
+    "code": "expo_value",
+    "tableType": "float(4)",
+    "name": "로렌츠 곡선 지수"
+  },
+  {
+    "code": "gnipc_f",
+    "tableType": "float(0)",
+    "name": "1인당 GNI, 여성"
+  },
+  {
+    "code": "gnipc_m",
+    "tableType": "float(0)",
+    "name": "1인당 GNI, 남성"
+  },
+  {
+    "code": "gnipc_b",
+    "tableType": "float(0)",
+    "name": "1인당 GNI, 전체"
+  },
+  {
+    "code": "gnipc_diff_fm",
+    "tableType": "float(0)",
+    "name": "1인당 GNI 여성-남성 차이"
+  },
+  {
+    "code": "gnipc_diff_fb",
+    "tableType": "float(0)",
+    "name": "1인당 GNI 여성-전체 차이"
+  },
+  {
+    "code": "gnipc_diff_mb",
+    "tableType": "float(0)",
+    "name": "1인당 GNI 남성-전체 차이"
+  },
+  {
+    "code": "gnipc_ratio_fm",
+    "tableType": "ratio(2)",
+    "name": "1인당 GNI 여성/남성 비"
+  },
+  {
+    "code": "gnipc_ratio_fb",
+    "tableType": "ratio(2)",
+    "name": "1인당 GNI 여성/전체 비"
+  },
+  {
+    "code": "gnipc_ratio_mb",
+    "tableType": "ratio(2)",
+    "name": "1인당 GNI 남성/전체 비"
+  },
+  {
+    "code": "gni_f",
+    "tableType": "float(1)",
+    "name": "GNI, 여성"
+  },
+  {
+    "code": "gni_m",
+    "tableType": "float(1)",
+    "name": "GNI, 남성"
+  },
+  {
+    "code": "gni_b",
+    "tableType": "float(1)",
+    "name": "GNI, 전체"
+  },
+  {
+    "code": "gni_diff_fm",
+    "tableType": "float(1)",
+    "name": "GNI 여성-남성 차이"
+  },
+  {
+    "code": "gni_diff_fb",
+    "tableType": "float(1)",
+    "name": "GNI 여성-전체 차이"
+  },
+  {
+    "code": "gni_diff_mb",
+    "tableType": "float(1)",
+    "name": "GNI 남성-전체 차이"
+  },
+  {
+    "code": "gni_ratio_fm",
+    "tableType": "ratio(2)",
+    "name": "GNI 여성/남성 비"
+  },
+  {
+    "code": "gni_ratio_fb",
+    "tableType": "ratio(2)",
+    "name": "GNI 여성/전체 비"
+  },
+  {
+    "code": "gni_ratio_mb",
+    "tableType": "ratio(2)",
+    "name": "GNI 남성/전체 비"
+  },
+  {
+    "code": "scale_f",
+    "tableType": "float(2)",
+    "name": "스케일, 여성"
+  },
+  {
+    "code": "p1_f",
+    "tableType": "float(1)",
+    "name": "하위 10, 여성"
+  },
+  {
+    "code": "p2_f",
+    "tableType": "float(1)",
+    "name": "하위 20, 여성"
+  },
+  {
+    "code": "p3_f",
+    "tableType": "float(1)",
+    "name": "하위 30, 여성"
+  },
+  {
+    "code": "p4_f",
+    "tableType": "float(1)",
+    "name": "하위 40, 여성"
+  },
+  {
+    "code": "p5_f",
+    "tableType": "float(1)",
+    "name": "하위 50, 여성"
+  },
+  {
+    "code": "p6_f",
+    "tableType": "float(1)",
+    "name": "하위 60, 여성"
+  },
+  {
+    "code": "p7_f",
+    "tableType": "float(1)",
+    "name": "하위 70, 여성"
+  },
+  {
+    "code": "p8_f",
+    "tableType": "float(1)",
+    "name": "하위 80, 여성"
+  },
+  {
+    "code": "p9_f",
+    "tableType": "float(1)",
+    "name": "하위 90, 여성"
+  },
+  {
+    "code": "p10_f",
+    "tableType": "float(1)",
+    "name": "총, 여성"
+  },
+  {
+    "code": "scale_m",
+    "tableType": "float(2)",
+    "name": "스케일, 남성"
+  },
+  {
+    "code": "p1_m",
+    "tableType": "float(1)",
+    "name": "하위 10, 남성"
+  },
+  {
+    "code": "p2_m",
+    "tableType": "float(1)",
+    "name": "하위 20, 남성"
+  },
+  {
+    "code": "p3_m",
+    "tableType": "float(1)",
+    "name": "하위 30, 남성"
+  },
+  {
+    "code": "p4_m",
+    "tableType": "float(1)",
+    "name": "하위 40, 남성"
+  },
+  {
+    "code": "p5_m",
+    "tableType": "float(1)",
+    "name": "하위 50, 남성"
+  },
+  {
+    "code": "p6_m",
+    "tableType": "float(1)",
+    "name": "하위 60, 남성"
+  },
+  {
+    "code": "p7_m",
+    "tableType": "float(1)",
+    "name": "하위 70, 남성"
+  },
+  {
+    "code": "p8_m",
+    "tableType": "float(1)",
+    "name": "하위 80, 남성"
+  },
+  {
+    "code": "p9_m",
+    "tableType": "float(1)",
+    "name": "하위 90, 남성"
+  },
+  {
+    "code": "p10_m",
+    "tableType": "float(1)",
+    "name": "총, 남성"
+  },
+  {
+    "code": "scale_b",
+    "tableType": "float(2)",
+    "name": "스케일, 전체"
+  },
+  {
+    "code": "p1_b",
+    "tableType": "float(1)",
+    "name": "하위 10, 전체"
+  },
+  {
+    "code": "p2_b",
+    "tableType": "float(1)",
+    "name": "하위 20, 전체"
+  },
+  {
+    "code": "p3_b",
+    "tableType": "float(1)",
+    "name": "하위 30, 전체"
+  },
+  {
+    "code": "p4_b",
+    "tableType": "float(1)",
+    "name": "하위 40, 전체"
+  },
+  {
+    "code": "p5_b",
+    "tableType": "float(1)",
+    "name": "하위 50, 전체"
+  },
+  {
+    "code": "p6_b",
+    "tableType": "float(1)",
+    "name": "하위 60, 전체"
+  },
+  {
+    "code": "p7_b",
+    "tableType": "float(1)",
+    "name": "하위 70, 전체"
+  },
+  {
+    "code": "p8_b",
+    "tableType": "float(1)",
+    "name": "하위 80, 전체"
+  },
+  {
+    "code": "p9_b",
+    "tableType": "float(1)",
+    "name": "하위 90, 전체"
+  },
+  {
+    "code": "p10_b",
+    "tableType": "float(1)",
+    "name": "총, 전체"
+  },
+  {
+    "code": "f_m",
+    "tableType": "float(10)",
+    "name": "여성-남성"
+  },
+  {
+    "code": "f_b",
+    "tableType": "float(10)",
+    "name": "여성-전체"
+  },
+  {
+    "code": "m_f",
+    "tableType": "float(10)",
+    "name": "남성-여성"
+  },
+  {
+    "code": "m_b",
+    "tableType": "float(10)",
+    "name": "남성-전체"
+  },
+  {
+    "code": "pop100_f",
+    "tableType": "float(0)",
+    "name": "100분위, 여성"
+  },
+  {
+    "code": "pop100_m",
+    "tableType": "float(0)",
+    "name": "100분위, 남성"
+  },
+  {
+    "code": "pop100_b",
+    "tableType": "float(0)",
+    "name": "100분위, 전체"
+  }
+]

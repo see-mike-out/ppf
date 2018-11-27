@@ -1,0 +1,117 @@
+[
+  {
+    "code": "category",
+    "tableType": "text",
+    "name": "Category"
+  },
+  {
+    "code": "stAbbr",
+    "tableType": "text",
+    "name": "Country Code"
+  },
+  {
+    "code": "stName",
+    "tableType": "text",
+    "name": "Country"
+  },
+  {
+    "code": "ghgTot",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Total)"
+  },
+  {
+    "code": "ghgAgr",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Agriculture)"
+  },
+  {
+    "code": "ghgMnf",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Manifacturing & Construction)"
+  },
+  {
+    "code": "ghgEng",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Energy)"
+  },
+  {
+    "code": "ghgTsp",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Transport)"
+  },
+  {
+    "code": "ghgEtc",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Other Sectors)"
+  },
+  {
+    "code": "ghgIdw",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Waste)"
+  },
+  {
+    "code": "ghgIda",
+    "tableType": "float(2)",
+    "name": "Greenhouse Gas Emit (Additionary)"
+  },
+  {
+    "code": "vadTot",
+    "tableType": "float(4)",
+    "name": "Value Added (Total)"
+  },
+  {
+    "code": "vadAgr",
+    "tableType": "float(4)",
+    "name": "Value Added (Agriculture)"
+  },
+  {
+    "code": "vadMnf",
+    "tableType": "float(4)",
+    "name": "Value Added (Manufacturing & Construction)"
+  },
+  {
+    "code": "vadEng",
+    "tableType": "float(4)",
+    "name": "Value Added (Energy)"
+  },
+  {
+    "code": "vadTsp",
+    "tableType": "float(4)",
+    "name": "Value Added (Transport)"
+  },
+  {
+    "code": "vadEtc",
+    "tableType": "float(4)",
+    "name": "Value Added (Other Sectors)"
+  },
+  {
+    "code": "perTot",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Total)"
+  },
+  {
+    "code": "perAgr",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Agriculture)"
+  },
+  {
+    "code": "perMnf",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Manufacturing & Construction)"
+  },
+  {
+    "code": "perEng",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Energy)"
+  },
+  {
+    "code": "perTsp",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Transport)"
+  },
+  {
+    "code": "perEtc",
+    "tableType": "float(4)",
+    "name": "Greenhouse Gas Emission per Income (Other Sectors)"
+  }
+]

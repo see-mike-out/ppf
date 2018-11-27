@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="l3 m12 s12">
+      <div class="content-wrap">
+        {{#if is_en}}
+          <h1>Graphs</h1>
+        {{else}}
+          <h1>그래프</h1>
+        {{/if}}
+      </div>
+    </div>
+    <div class="l9 m12 s12">
+      <div class="content-wrap">
+        <div class="sublist_foldable" data-open="false">
+          <div class="folder" id="graph_list">
+            {{#if is_en}}
+              <span>List of Graphs</span>
+            {{else}}
+              <span>그래프 목록</span>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    
+    <div class="l12 m12 s12">
+      <div class="content-wrap graph-wrap">
+        <div id="graph_area"></div>
+        <div id="graph_tooltip" data-show="false">
+          <span class="name"></span>
+          <span class="value"></span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/wpmy/js/wpmy_utility.js"></script>
+<script src="/wpmy/js/graph_control.js"></script>
+<script>
+  create_graph_list('#graph_list', '#graph_area', "{{ln}}");
+  get_graph('#graph_area', "gini", "{{ln}}");
+  $('.sublist_foldable')
+    .on('mouseover', function() { $(this).attr('data-open', 'true') })
+    .on('mouseout', function() { $(this).attr('data-open', 'false') });
+</script>

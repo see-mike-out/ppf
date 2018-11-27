@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>What Percent Male are You? by Mike Project</title>
+    <link rel="stylesheet" href="/css/wpym.css"/>
+    <link rel="stylesheet" href="/css/grid.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div id="go_to_root" class="l12 m12 s12">
+            <a href="/">Mike Project</a>
+          </div>
+          <div id="main_logo" class="l12 m12 s12">
+            <a href="/whatpercentmaleareyou">What Percent Male are You?</a>
+          </div>
+          <div class="l12 m12 s12">
+            <div id="main_nav">
+              {{#if is_en}}
+                <a href="/whatpercentmaleareyou/tables">Tables</a>
+                <a href="/whatpercentmaleareyou/graphs">Graphs</a>
+                <a href="/whatpercentmaleareyou/bycountry">By Country</a>
+                <a href="/whatpercentmaleareyou/download">Download</a>
+                <a href="/change_language/ko">한</a>
+              {{else}}
+                <a href="/whatpercentmaleareyou/tables">표</a>
+                <a href="/whatpercentmaleareyou/graphs">그래프</a>
+                <a href="/whatpercentmaleareyou/bycountry">나라별</a>
+                <a href="/whatpercentmaleareyou/download">다운로드</a>
+                <a href="/change_language/en">EN</a>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {{{body}}}
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="l12 m12 s12">&copy; 2017 Mike Project / Work of a Feminist.</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

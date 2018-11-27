@@ -1,0 +1,426 @@
+[{
+  "code": "category",
+  "name": "Category",
+  "sqlType": "VARCHAR(7)",
+  "tableType": "text"
+}, {
+  "code": "stAbbr",
+  "name": "Country Code",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "stName",
+  "name": "Country",
+  "sqlType": "VARCHAR(20)",
+  "tableType": "lnText"
+}, {
+  "code": "crAbbr",
+  "name": "Currency Code",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "crName",
+  "name": "Currency",
+  "sqlType": "VARCHAR(20)",
+  "tableType": "lnText"
+}, {
+  "code": "crUsdRate",
+  "name": "Currency Rate to USD",
+  "sqlType": "FLOAT(12,8)",
+  "tableType": "float(8)"
+}, {
+  "code": "gdpcUsd",
+  "name": "GDP per Capita (USD)",
+  "sqlType": "FLOAT(12,4)",
+  "tableType": "float(4)"
+}, {
+  "code": "gdpcLoc",
+  "name": "GDP per Capita (Local)",
+  "sqlType": "FLOAT(16,4)",
+  "tableType": "float(4)"
+}, {
+  "code": "gdpcCr",
+  "name": "Local Currency (GDP per Capita)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "gdpcY",
+  "name": "Year (GDP)",
+  "sqlType": "VARCHAR(4)",
+  "tableType": "text"
+}, {
+  "code": "pvUsd",
+  "name": "Poverty Line (USD)",
+  "sqlType": "FLOAT(20,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "pvLoc",
+  "name": "Poverty Line (Local)",
+  "sqlType": "FLOAT(20,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "pvCr",
+  "name": "Local Currency (Poverty Line)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "pvY",
+  "name": "Year (Poverty Line)",
+  "sqlType": "VARCHAR(4)",
+  "tableType": "text"
+}, {
+  "code": "pvNote",
+  "name": "Note (Poverty Line)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "pvSource",
+  "name": "Source (Poverty Line)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "mwHourlyUsd",
+  "name": "Minimum Hourly Wage (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "mwHourlyLoc",
+  "name": "Minimum Hourly Wage (Local)",
+  "sqlType": "FLOAT(12,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "mwUnitUsd",
+  "name": "Minimum Unit Wage (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "mwUnitLoc",
+  "name": "Minimum Unit Wage (Local)",
+  "sqlType": "FLOAT(12,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "mwCr",
+  "name": "Local Currency (Minimum Wage)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "mwUnit",
+  "name": "Minimum Wage Time Period",
+  "sqlType": "VARCHAR(10)",
+  "tableType": "lnText"
+}, {
+  "code": "mwWhUnit",
+  "name": "Minimum Wage Unit Hours",
+  "sqlType": "FLOAT(4,1)",
+  "tableType": "float(1)"
+}, {
+  "code": "mwY",
+  "name": "Year (Minimum Wage)",
+  "sqlType": "VARCHAR(4)",
+  "tableType": "text"
+}, {
+  "code": "mwE",
+  "name": "Minimum Wage Estimation",
+  "sqlType": "VARCHAR(1)",
+  "tableType": "bool"
+}, {
+  "code": "mwNote",
+  "name": "Note (Minimum Wage)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "mwSource",
+  "name": "Source (Minimum Wage)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "whWeekly",
+  "name": "Weekly Work Hour",
+  "sqlType": "FLOAT(3,1)",
+  "tableType": "float(1)"
+}, {
+  "code": "whNote",
+  "name": "Note (Weekly Work Hour)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "whSource",
+  "name": "Source (Weekly Work Hour)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "bmUsd",
+  "name": "Big Mac (USD)",
+  "sqlType": "FLOAT(20,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "bmLoc",
+  "name": "Big Mac (Local)",
+  "sqlType": "FLOAT(20,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "bmCr",
+  "name": "Local Currency (Big Mac)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "ccUsd",
+  "name": "Coca-Cola 1.5L (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "ccLoc",
+  "name": "Coca-Cola 1.5L (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "ccCr",
+  "name": "Local Currency (Coca-Cola 1.5L)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "cc250Loc",
+  "name": "Coca-Cola 0.25L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc500Loc",
+  "name": "Coca-Cola 0.5L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc1000Loc",
+  "name": "Coca-Cola 1L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc1250Loc",
+  "name": "Coca-Cola 1.25L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc1500Loc",
+  "name": "Coca-Cola 1.5L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc1750Loc",
+  "name": "Coca-Cola 1.75L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "cc2000Loc",
+  "name": "Coca-Cola 2L",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "ccNote",
+  "name": "Note (Coca-Cola)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "ccSource",
+  "name": "Source (Coca-Cola)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "adUsd",
+  "name": "Adidas Training Pants (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "adLoc",
+  "name": "Adidas Training Pants (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "adCr",
+  "name": "Local Currencty (Adidas Training Pants)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "adPid",
+  "name": "Product ID (Adidas Training Pants)",
+  "sqlType": "VARCHAR(6)",
+  "tableType": "text"
+}, {
+  "code": "adSource",
+  "name": "Source (Adidas Training Pants)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "kbUsd",
+  "name": "Ikea Bed Set (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "kbLoc",
+  "name": "Ikea Bed Set (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "kbCr",
+  "name": "Local Currency (Ikea Bed Set)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "kbSize",
+  "name": "Size (Ikea Bed Set)",
+  "sqlType": "VARCHAR(10)",
+  "tableType": "text"
+}, {
+  "code": "kbNote",
+  "name": "Note (Ikea Bed Set)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "kbFLoc",
+  "name": "Ikea Bed Frame (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "kbFPid",
+  "name": "Product ID (Ikea Bed Frame)",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "kbFSource",
+  "name": "Source (Ikea Bed Frame)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "kbBLoc",
+  "name": "Ikea Bed Base (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "kbBPid",
+  "name": "Product ID (Ikea Bed Base)",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "kbBSource",
+  "name": "Source (Ikea Bed Base)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "kbMLoc",
+  "name": "Ikea Bed Matress (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "kbMPid",
+  "name": "Product ID (Ikea Bed Matress)",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "kbMSource",
+  "name": "Source (Ikea Bed Matress)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "dpUsd",
+  "name": "Dell 15-inch Laptop (USD)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "dpLoc",
+  "name": "Dell 15-inch Laptop (Local)",
+  "sqlType": "FLOAT(10,2)",
+  "tableType": "float(2)"
+}, {
+  "code": "dpCr",
+  "name": "Local Currency (Dell 15-inch Laptop)",
+  "sqlType": "VARCHAR(3)",
+  "tableType": "text"
+}, {
+  "code": "dpPid",
+  "name": "Product ID (Dell 15-inch)",
+  "sqlType": "VARCHAR(20)",
+  "tableType": "text"
+}, {
+  "code": "dpSize",
+  "name": "Screen Size",
+  "sqlType": "FLOAT(3,1)",
+  "tableType": "text"
+}, {
+  "code": "dpCpu",
+  "name": "CPU",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "dpOs",
+  "name": "Operating System",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "dpMemory",
+  "name": "RAM Memory",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "dpHdd",
+  "name": "HDD Size",
+  "sqlType": "TEXT",
+  "tableType": "text"
+}, {
+  "code": "dpNote",
+  "name": "Note (Dell 15-inch Laptop)",
+  "sqlType": "TEXT",
+  "tableType": "note"
+}, {
+  "code": "dpSource",
+  "name": "Source (Dell 15-inch Laptop)",
+  "sqlType": "TEXT",
+  "tableType": "link"
+}, {
+  "code": "forBm",
+  "name": "Time to Buy Big Mac",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "time"
+}, {
+  "code": "forCc",
+  "name": "Time to Buy Coca-Cola 1.5L",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "time"
+}, {
+  "code": "forAd",
+  "name": "Time to Buy Adidas Training Pants",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "time"
+}, {
+  "code": "forKb",
+  "name": "Time to Buy Ikea Bed Set",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "time"
+}, {
+  "code": "forDp",
+  "name": "Time to Buy Dell 15-inch Laptop",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "time"
+}, {
+  "code": "perBm",
+  "name": "Big Mac with 1-hour",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "float(8)"
+}, {
+  "code": "perCc",
+  "name": "Coca-Cola 1.5L with 1-hour",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "float(8)"
+}, {
+  "code": "perAd",
+  "name": "Adidas Training Pants with 1-hour",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "float(8)"
+}, {
+  "code": "perKb",
+  "name": "Ikea Bed Set with 1-hour",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "float(8)"
+}, {
+  "code": "perDp",
+  "name": "Dell 15-inch Laptop with 1-hour",
+  "sqlType": "FLOAT(16,8)",
+  "tableType": "float(8)"
+}]

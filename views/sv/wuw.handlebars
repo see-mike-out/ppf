@@ -1,0 +1,35 @@
+
+  <script src="/sv/wuw/data.js"></script>
+  <script src="/sv/wuw/color_convert.js"></script>
+  <script src="/sv/wuw/control.js"></script>
+  
+  <!--section title-->
+    <div id="section-title" class="container">
+      <div class="row">
+        <div class="col s12 m7 l7">
+          <h3>Women's Annual Unpaid Work Hour</h1>
+        </div>
+        <div class="col s12 m5 l5">
+          <p class="grey-text text-darken-2">
+            The graph below shows women's unpaid work hours of OECD countries.
+            If you point a bar by hovering, clicking, or touching, you can check the specific value.
+            The values are calculated as average annual work hour multplied by gender wage gap.
+            You can sort the graph by clicking legends which are located at the corners of the graph.
+          </p>
+          <p class="grey-text text-darken-1">
+            Source: <a href="http://stats.oecd.org">OECD Stats </a>
+          </p>
+        </div>
+      </div><!--row ends-->
+    </div><!--header ends-->
+
+    <!--content-->
+    <div id="content" class="container">
+      <div class="row">
+        <div id="graph-whole" class="col s12 m12 l12">
+        </div>
+        <script>
+          showGraphEntire('u');
+        </script>
+      </div>
+    </div><!--content ends-->

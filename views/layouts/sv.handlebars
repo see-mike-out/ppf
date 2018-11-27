@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{title}} by Mike Project</title>
+  <!--meta tag-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!--open graph-->
+  <meta property="og:title" content="{{title}} - Mike Project" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://mike-project/{{url}}" />
+  <!--cdn packages-->
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--d3.js-->
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+
+  <!--style sheet-->
+  <link rel="stylesheet" media="screen" type="text/css" href="/sv/style.css" />
+  {{#equal code "four_seasons"}}
+  <link rel="stylesheet" media="screen" type="text/css" href="/sv/four_seasons/story.css" />
+  {{/equal}}
+
+</head>
+<body>
+  <div class="wrapper">
+    <!--header-->
+    <div id="header" class="container">
+      <div class="row">
+        <div id="site-title" class="col s8 m7 l7">
+          <a href="/" id="site-mp">Mike Project</a>
+          <a href="/archive/short-visuals" id="site-this">Short Visuals</a>
+        </div><!--site-title ends-->
+      </div><!--row ends-->
+    </div><!--header ends-->\
+    {{{body}}}
+    <div id="footer" class="container">
+      <div class="row">
+        <div id="copy" class="col s12 m12 l12">
+          2017-2018 &copy; Mike Project
+        </div>
+      </div>
+    </div><!--footer ends-->
+  </div>
+</body>
+</html>

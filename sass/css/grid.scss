@@ -1,0 +1,49 @@
+
+$lg: 1000px;
+$md: 500px;
+
+//general
+.container {
+  padding: 0 15px;
+  @media screen and (min-width: $lg) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $lg) {
+    width: 500px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: $md) {
+    width: 100%;
+    margin: 0;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin: 0 -15px;
+    @media screen and (min-width: $lg) {
+      .l2, .l3, .l4, .l6, .l8, .l9, .l12 { padding: 0 15px; box-sizing: border-box;}
+      .l2 { width: 16.66%; }
+      .l3 { width: 25%; }
+      .l4 { width: 33.3%; }
+      .l6 { width: 50%; }
+      .l8 { width: 66.6%; }
+      .l9 { width: 75%; }
+      .l12 { width: 100%; }
+    }
+    @media screen and (max-width: $lg) {
+      .m3, .m4, .m6, .m8, .m12 { padding: 0 15px; box-sizing: border-box;}
+      .m3 { width: 25%; }
+      .m4 { width: 33.3%; }
+      .m6 { width: 50%; }
+      .m8 { width: 66.6%; }
+      .m12 { width: 100%; }
+    }
+    @media screen and (max-width: $md) {
+      .s6, .s12 { padding: 0 15px; box-sizing: border-box;}
+      .s6 { width: 50%; }
+      .s12 { width: 100%; }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<section id="lstoss" class="doc">
+  <div class="container">
+    <div class="row">
+      <div class="l12 m12 s12">
+        <h2 class="comb">Works > Web Development</h2>
+        <h1>SNU FactCheck</h1>
+        <p>
+          SNU FactCheck is a fact-checking service where general people report social issues and professional journalists check their facts. 
+          This service is the first service in Korea that collects factcheck contents from various sources. At first, it started with 7 
+          media outlets, but now there are 27, including the top 3 broadcasting companies (KBS, MBC, and SBS) and 
+          the top 2 newspaper companies (Chosun and Jungang). In other words, it was our mission to effectively visualize the factcheck 
+          contents from multiple journalists, which are apt to be too lengthy to read. Therefore, my team suggested FactMeter, a 
+          gauge-like object showing the degree of an issue's factuality. Also, my mission as a front-end developer was to vary the card 
+          UI elements to fit various screen types.
+        </p>
+        <p><strong>Period</strong> Jan 2017 - May 2017</p>
+        <p><strong>My Role</strong> Front-end Developer</p>
+        <p><strong>Client</strong> <a href="http://icr.snu.ac.kr/" target="_blank">SNU Institute for Communication Research</a>ㅡ (sponsored by <a href="http://www.naver.com" target="_blank">Naver</a>)</p>
+        <p><strong>Director</strong> Prof. Joonhwan Lee</p>
+        <p><strong>Vice Director</strong> Nahi Hong</p>
+        <p><strong>Designer</strong> Cindy Oh</p>
+        <p><strong>Back-end Developer</strong> Jinsu Eun</p>
+        <p><a href="http://factcheck.snu.ac.kr" target="_blank">Link</a> (The most part of the design was changed as its business area 
+        was expanded, but the FactMeter remains as its original version.) </p>
+      </div>
+    </div>
+    
+    <!-- FactMeter -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>FactMeter</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/factcheck/factcheck_factmeter.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          The idea of FactMeter was proposed by the director, and the designer developed this into realizable one. My job was to make this 
+          able to represent the degree of factuality. Basically, the needle of a FactMeter moves along with the issue's fact-score (1-5). 
+          An easier way might be to provide a static FactMeter with the mean of the fact-score. However, the fact-score cannot be pooled 
+          because each media outlet had a different value system and an average score might ignore minor opinionss. Thus, the needle should 
+          be dynamic.
+        </p>
+        <p>
+          There was a conflict between two options. One is that all the scores need to be presented withina short amount of time. 
+          The other is that if the needle moves so fast, it might not be recognizable. This debate might be common issue when 
+          the movement of an element is actually one of visual variables of a visualization. In order to obtain an appropriate speed 
+          of the needle's movement, I casually tested several spped options with groups of people, and applied it to the final system.
+        </p>
+      </div>
+    </div>
+    
+    
+    <!-- Card UI for Mobile -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Variation of Card UI</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/factcheck/factcheck_card.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          A card user interface is highly applicable to a system presenting a number of information objects because it can easily mark 
+          each piece of information. Since the service was targeted to general audience, the cards should be altered in accordance with 
+          screen sizes. There were two major variations with different layout hierarchy and information elements. Therefore, I had to 
+          precisely control CSS positioning features. For example, in the desktop version, the position of each element could be controlled 
+          by absolute values, but by relative values in the mobile version because screen width cannot be determined.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Custom grid for the layouts -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Custom Grid System</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/factcheck/factcheck_grid.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          Nowadays, a grid system is pervasive for responsive design, and 12-equal-width grid system is conventional. However, 
+          the existing Bootstrap and Materialize cannot be applied because our card consisted of specific information elements and 
+          they demanded a certain amount of space. Therefore, I had to implement a custom grid system that fit to our card design.s
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>

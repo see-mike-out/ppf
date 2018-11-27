@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+body, html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+div {
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffffff; }
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: 0; } }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 500px;
+    margin: 0; } }
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0; } }
+
+header {
+  font-family: 'Roboto Slab', sans-serif; }
+  @media screen and (min-width: 1000px) {
+    header {
+      margin-top: 45px;
+      margin-bottom: 25px; } }
+  @media screen and (max-width: 1000px) {
+    header {
+      margin-top: 30px;
+      margin-bottom: 20px; } }
+  @media screen and (max-width: 500px) {
+    header {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
+  header #main_logo {
+    text-align: left;
+    line-height: 100%;
+    font-weight: 600;
+    padding-left: 15px; }
+    @media screen and (min-width: 1000px) {
+      header #main_logo {
+        font-size: 65px;
+        width: 265px;
+        height: 75px;
+        padding-bottom: 10px; } }
+    @media screen and (max-width: 1000px) {
+      header #main_logo {
+        font-size: 55px;
+        width: 200px;
+        height: 65px;
+        padding-bottom: 10px; } }
+    @media screen and (max-width: 500px) {
+      header #main_logo {
+        font-size: 40px;
+        width: 100%;
+        height: 40px; } }
+  header #main_nav {
+    line-height: 100%;
+    box-sizing: border-box; }
+    header #main_nav a {
+      color: #222;
+      text-decoration: none;
+      transition: .3s;
+      display: inline-block; }
+      header #main_nav a .nav_hl_bar {
+        width: 0;
+        background-color: #11998e;
+        transition: .3s; }
+      header #main_nav a:hover, header #main_nav a[data-selected=true] {
+        color: #11998e; }
+        header #main_nav a:hover .nav_hl_bar, header #main_nav a[data-selected=true] .nav_hl_bar {
+          width: 100%; }
+    @media screen and (min-width: 1000px) {
+      header #main_nav {
+        font-size: 30px;
+        width: 735px;
+        height: 65px;
+        padding: 29px 15px 16px 0;
+        text-align: right; }
+        header #main_nav a {
+          margin-left: 20px;
+          height: 30px;
+          overflow: visible; }
+          header #main_nav a .nav_hl_bar {
+            height: 5px;
+            margin-top: 8px; } }
+    @media screen and (max-width: 1000px) {
+      header #main_nav {
+        font-size: 25px;
+        width: 300px;
+        height: 55px;
+        padding: 25px 15px 25px 0;
+        text-align: right; }
+        header #main_nav a {
+          margin-left: 15px;
+          height: 25px;
+          overflow: visible; }
+          header #main_nav a .nav_hl_bar {
+            height: 4px;
+            margin-top: 6px; } }
+    @media screen and (max-width: 500px) {
+      header #main_nav {
+        font-size: 20px;
+        width: 100%;
+        height: 20px;
+        margin-top: 15px;
+        padding: 0 0 0 15px;
+        text-align: left; }
+        header #main_nav a {
+          margin-right: 15px;
+          margin-left: 0;
+          height: 20px;
+          overflow: visible; }
+          header #main_nav a .nav_hl_bar {
+            height: 5px;
+            margin-top: 8px; } }
+
+section#main_vis p.cap {
+  color: #999; }
+  @media screen and (min-width: 1000px) {
+    section#main_vis p.cap {
+      width: 485px;
+      margin-left: 500px;
+      margin-right: 15px;
+      font-size: 15px; } }
+  @media screen and (max-width: 1000px) {
+    section#main_vis p.cap {
+      font-size: 13.5px; } }
+  @media screen and (max-width: 500px) {
+    section#main_vis p.cap {
+      font-size: 13px; } }
+
+section#main_vis img {
+  width: 100%; }
+
+section.doc h1 {
+  font-weight: 600;
+  color: #11998e; }
+  @media screen and (min-width: 1000px) {
+    section.doc h1 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px; } }
+  @media screen and (max-width: 1000px) {
+    section.doc h1 {
+      font-size: 18px;
+      margin-top: 36px;
+      margin-bottom: 8px; } }
+
+section.doc h2 {
+  font-weight: 600;
+  color: #222; }
+  @media screen and (min-width: 1000px) {
+    section.doc h2 {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 10px; } }
+  @media screen and (max-width: 1000px) {
+    section.doc h2 {
+      font-size: 16px;
+      margin-top: 18px;
+      margin-bottom: 8px; } }
+
+section.doc h2.comb {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: -20px; }
+
+section.doc p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 150%; }
+  section.doc p a {
+    color: #11998e; }
+
+section.doc img {
+  width: 100%; }
+
+section.gal h1 {
+  font-weight: 600;
+  color: #11998e; }
+  @media screen and (min-width: 1000px) {
+    section.gal h1 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px; } }
+  @media screen and (max-width: 1000px) {
+    section.gal h1 {
+      font-size: 18px;
+      margin-top: 36px;
+      margin-bottom: 8px; } }
+
+section.gal p {
+  font-size: 16px;
+  margin: 10px 0;
+  line-height: 150%; }
+  section.gal p a {
+    color: #11998e; }
+
+section.gal .card_gal {
+  width: 100%; }
+  section.gal .card_gal article {
+    transition: .3s;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    background-position: left bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat; }
+    section.gal .card_gal article:hover {
+      background-color: #fafafa;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    section.gal .card_gal article p {
+      margin: 0 0 7px 0;
+      font-weight: 100;
+      hyphens: auto; }
+      section.gal .card_gal article p:last-of-type {
+        margin: 0; }
+    section.gal .card_gal article img {
+      width: 100%; }
+    section.gal .card_gal article.img {
+      line-height: 100%; }
+    section.gal .card_gal article h2 {
+      font-weight: 600; }
+  @media screen and (min-width: 1000px) {
+    section.gal .card_gal {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 35px;
+      width: 990px; }
+      section.gal .card_gal article {
+        width: 310px;
+        height: 310px;
+        padding: 20px;
+        font-size: 16px;
+        margin: 0 20px 20px 0; }
+        section.gal .card_gal article.grp2 {
+          width: 640px; }
+        section.gal .card_gal article.grp3 {
+          width: 970px; }
+        section.gal .card_gal article.img {
+          padding: 0; }
+        section.gal .card_gal article h2 {
+          margin: 0 0 15px 0;
+          font-size: 17px;
+          line-height: 120%; } }
+  @media screen and (max-width: 1000px) {
+    section.gal .card_gal {
+      display: block; }
+      section.gal .card_gal article {
+        padding: 15px;
+        margin: 0 0 15px 0;
+        font-size: 15px; }
+        section.gal .card_gal article.img {
+          height: 250px;
+          padding: 0;
+          overflow: hidden; }
+          section.gal .card_gal article.img img {
+            position: relative;
+            top: -125px; }
+        section.gal .card_gal article h2 {
+          margin: 0 0 14px 0;
+          font-size: 18px;
+          line-height: 120%; } }
+  @media screen and (max-width: 500px) {
+    section.gal .card_gal {
+      display: block; }
+      section.gal .card_gal article {
+        padding: 15px 15px 160px 15px;
+        margin: 0 0 15px 0;
+        font-size: 15px; }
+        section.gal .card_gal article.img {
+          height: 200px;
+          padding: 0;
+          overflow: hidden; }
+          section.gal .card_gal article.img img {
+            position: relative;
+            top: -100px; }
+        section.gal .card_gal article h2 {
+          margin: 0 0 13px 0;
+          font-size: 18px;
+          line-height: 120%; } }
+
+footer {
+  color: #aaa;
+  text-align: center; }
+  footer .container .row .copy {
+    width: 100%;
+    text-align: center; }
+  @media screen and (min-width: 1000px) {
+    footer {
+      margin: 100px 0; } }
+  @media screen and (max-width: 1000px) {
+    footer {
+      margin: 80px 0; } }
+  @media screen and (max-width: 500px) {
+    footer {
+      margin: 50px 0 50px 0;
+      padding-bottom: 20px; } }
+
+@media screen and (min-width: 1000px) {
+  .row.archive_section {
+    padding-top: 100px; } }
+
+@media screen and (max-width: 1000px) {
+  .row.archive_section {
+    padding-top: 50px; } }
+
+@media screen and (max-width: 500px) {
+  .row.archive_section {
+    padding-top: 50px; } }

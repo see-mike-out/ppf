@@ -1,0 +1,148 @@
+<style>
+  *[data-show=false] {
+    display: none;
+  }
+  *[data-show=true] {
+    display: ;
+  }
+</style>
+<div class="container" style="margin-top: 30px">
+  <div class="row">
+    <div class="col-12 col-lg-8" data-role="preview">
+      <div id="preview-wrap" data-role="preview-panel">
+        <div class="card">
+          <div class="card-header">
+            <h4>Preview</h4>
+          </div>
+          <div class="card-footer" data-role="overview">
+            Carousel
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4" data-role="control">
+      <!--document control-->
+      <div id="control-document" data-role="control-panel">
+        <div class="card">
+          <div class="card-header">
+            <h4 onclick="visibility_toggle('#control-panel-document')">Document</h4>
+          </div>
+          <!--contorl > documet-->
+          <ul class="list-group list-group-flush" id="control-panel-document" data-show="true">
+            <!--document > ratio-->
+            <li class="list-group-item">
+              <h5>Ratio</h5>
+              <div class="row">
+                <div class="form-group col-6">
+                  <label for="ctrl_ratio_w">Width</label>
+                  <input type="number" class="form-control" id="ctrl_ratio_w" placeholder="Ratio Width" data-role="input" data-target="document" data-attr="ratio_width">
+                </div>
+                <div class="form-group col-6">
+                  <label for="ctrl_ratio_h">Height</label>
+                  <input type="number" class="form-control" id="ctrl_ratio_h" placeholder="Ratio Width" data-role="input" data-target="document" data-attr="ratio_height">
+                </div>
+              </div>
+            </li>
+            <!--document > background-->
+            <li class="list-group-item">
+              <h5>Background</h5>
+              <div class="row">
+                <div class="form-group col-12">
+                  <label for="ctrl_background">Type</label>
+                  <select class="form-control" id="ctrl_background" onchange="subordinate(this)">
+                    <option value="color" data-subordinate="#control-panel-document-color">Color</option>
+                    <option value="grad" data-subordinate="#control-panel-document-grad">Gradient</option>
+                    <option value="image" data-subordinate="#control-panel-document-image">Image</option>
+                  </select>
+                </div>
+              </div>
+              <!--document > background > color -->
+              <div class="row" id="control-panel-document-color">
+                <div class="form-group col-12">
+                  <label for="ctrl_background_color">Color</label>
+                  <input type="color" class="form-control" id="ctrl_background_color">
+                </div>
+              </div>
+              <!--document > background > gradient -->
+              <div class="row" id="control-panel-document-grad" data-show="false" grad-id="document_background" data-role="grad-control">
+                <div class="col-12" id="ctrl_document_background_grad_demo" grad-role="grad-control-demo-0">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gradient_generator" data-grad="call">
+                    Click to Set Gradient
+                  </button>
+                </div>
+                <div class="form-group col-12">
+                  <label for="ctrl_background_grad_type">Gradiennt Type</label>
+                  <select class="form-control" id="ctrl_document_background_grad_type" grad-role="grad-control-type-0" data-role="grad-input">
+                    <option value="linear">Linear</option>
+                    <option value="radial">Radial</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <h6>Gradient Stops&nbsp;&nbsp;&nbsp;<button class="btn btn-primary btn-sm" grad-role="grad-add">{{#if is_en}}Add a Stop{{else}}중지점 추가{{/if}}</button></h6>
+                </div>
+                <div class="form-group col-6">
+                  <label for="ctrl_background_grad_stop_1_pos">Stop 1</label>
+                  <input type="number" max="100" min="0" step="0.1" value="0" class="form-control" id="ctrl_document_background_grad_stop_1_pos" grad-role="grad-control-stop-1" data-role="grad-input">
+                </div>
+                <div class="form-group col-6">
+                  <label for="ctrl_background_grad_stop_1_color">Color</label>
+                  <input type="color" class="form-control" id="ctrl_document_background_grad_stop_1_color" grad-role="grad-control-color-1" data-role="grad-input">
+                </div>
+              </div>
+              
+              <div class="row" id="control-panel-document-image" data-show="false">
+                <div class="form-group col-12">
+                  <label for="ctrl_background_color">Image</label>
+                  <input type="file" class="form-control" id="ctrl_background_image" data-preview="#document_background_image_preview">
+                </div>
+                <div class="col-12">
+                  Image Demo
+                  <div id="document_background_image_preview"></div>
+                </div>
+              </div>
+            </li>
+            
+            
+            
+          </ul>
+        
+        </div>
+      </div>
+      
+    </div>
+    <div class="alert alert-light">{{#if is_en}}This page is optimized for large size screens{{else}}이 페이지는 큰 화면에 최적화 되어 있습니다.{{/if}}</div>
+  </div>
+</div>
+
+<div class="modal fade" id="gradient_generator" tabindex="-1" role="dialog" aria-labelledby="gradient_generator" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gradient_generator">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="/library/slide.js"></script>
+<script src="/library/slide_maker.js"></script>
+<script>
+  // let templates = new SlideTemplate();
+  // let maker = new SlideMaker(templates);
+  // maker.init();
+  
+</script>

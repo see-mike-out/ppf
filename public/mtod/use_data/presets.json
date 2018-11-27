@@ -1,0 +1,93 @@
+range = {
+  'nationality': {
+    'max': 1.7,
+    'min': 1,
+    'mean': {
+        'both': 1.10,
+        'female': 1.06,
+        'male': 1.12
+    },
+    'median': {
+        'both': 1.07,
+        'female': 1.05,
+        'male': 1.08
+    }
+  },
+  'disability': {
+    'max': 1.1,
+    'min': 1,
+    'mean': {
+        'both': 1.06,
+        'female': 1.06,
+        'male': 1.07
+    },
+    'median': {
+        'both': 1.06,
+        'female': 1.05,
+        'male': 1.06
+    }
+  },
+  'gender': {
+    'max': 1.5,
+    'min': 1.4,
+    'mean': {
+        'both': 1.49,
+        'female': 1.49,
+        'male': 1.49
+    },
+    'median': {
+        'both': 1.49,
+        'female': 1.49,
+        'male': 1.49
+    }
+  },
+  'residence': {
+    'max': 2.2,
+    'min': 1,
+    'mean': {
+        'both': 1.65,
+        'female': 1.65,
+        'male': 1.65
+    },
+    'median': {
+        'both': 1.67,
+        'female': 1.67,
+        'male': 1.67
+    }
+  },
+  'industry': {
+    'max': 6,
+    'min': 2,
+    'mean': {
+        'both': 4.39,
+        'female': 3.91,
+        'male': 4.27
+    },
+    'median': {
+        'both': 4.54,
+        'female': 3.91,
+        'male': 4.48
+    }
+  },
+  'age': {
+    'max': 8.5,
+    'min': 6.5,
+    'mean': {
+        'both': 7.42,
+        'female': 7.55,
+        'male': 7.21
+    },
+    'median': {
+        'both': 7.39,
+        'female': 7.51,
+        'male': 7.21
+    }
+  }
+}
+
+key_color = {
+  'female': "#FF9F1C",
+  'male': "#2EC4B6",
+  'both': "#cccccc",
+  'background': "#222222"
+}

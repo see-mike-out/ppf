@@ -1,0 +1,231 @@
+<div class="container">
+  <div class="row">
+    <div class="l3 m12 s12">
+      <div class="content-wrap">
+        {{#if is_en}}
+          <h1>By Country</h1>
+        {{else}}
+          <h1>나라별</h1>
+        {{/if}}
+      </div>
+    </div>
+    <div class="l9 m12 s12">
+      <div class="content-wrap">
+        <div class="sublist_foldable" data-open="false">
+          <div class="folder" id="country_list">
+            {{#if is_en}}
+              <span>Choose a country to explore</span>
+            {{else}}
+              <span>탐색할 나라를 골라보세요</span>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row" id="country_view" data-open="false">
+    <div class="l12 m12 s12">
+      <h2 class="table_title" id="by_name">Name</h2>
+    </div>
+    <div class="l12 m12 s12">
+      <h3>
+        {{#if is_en}}
+          Income Curve
+        {{else}}
+          수입 곡선
+        {{/if}}
+      </h3>
+    </div>
+    <div class="l12 m12 s12">
+      <div id="by_curve">
+        
+      </div>
+    </div>
+    <div class="l12 m12 s12">
+      <h3>
+        {{#if is_en}}
+          Average income of each decile range
+        {{else}}
+          각 10분위 구간의 평균 수입
+        {{/if}}
+      </h3>
+    </div>
+    <div class="l12 m12 s12">
+      <div id="income_table">
+        <div class="header_column">
+          <div class="header-cell">{{#if is_en}}Decile{{else}}10분위{{/if}}</div>
+          <div class="body-cell">0~10</div>
+          <div class="body-cell">10~20</div>
+          <div class="body-cell">20~30</div>
+          <div class="body-cell">30~40</div>
+          <div class="body-cell">40~50</div>
+          <div class="body-cell">50~60</div>
+          <div class="body-cell">60~70</div>
+          <div class="body-cell">70~80</div>
+          <div class="body-cell">80~90</div>
+          <div class="body-cell">90~100</div>
+        </div>
+        <div class="body_columns">
+          <div class="body_columns_wrapper">
+            <div class="body_column" id="ictb-f">
+              <div class="header-cell">{{#if is_en}}Feamle{{else}}여성{{/if}}</div>
+              <div class="body-cell" id="ictb-f-1"></div>
+              <div class="body-cell" id="ictb-f-2"></div>
+              <div class="body-cell" id="ictb-f-3"></div>
+              <div class="body-cell" id="ictb-f-4"></div>
+              <div class="body-cell" id="ictb-f-5"></div>
+              <div class="body-cell" id="ictb-f-6"></div>
+              <div class="body-cell" id="ictb-f-7"></div>
+              <div class="body-cell" id="ictb-f-8"></div>
+              <div class="body-cell" id="ictb-f-9"></div>
+              <div class="body-cell" id="ictb-f-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-fm">
+              <div class="header-cell">{{#if is_en}}Male Equivalent{{else}}남성 수입 백분위{{/if}}</div>
+              <div class="body-cell" id="ictb-fm-1"></div>
+              <div class="body-cell" id="ictb-fm-2"></div>
+              <div class="body-cell" id="ictb-fm-3"></div>
+              <div class="body-cell" id="ictb-fm-4"></div>
+              <div class="body-cell" id="ictb-fm-5"></div>
+              <div class="body-cell" id="ictb-fm-6"></div>
+              <div class="body-cell" id="ictb-fm-7"></div>
+              <div class="body-cell" id="ictb-fm-8"></div>
+              <div class="body-cell" id="ictb-fm-9"></div>
+              <div class="body-cell" id="ictb-fm-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-fb">
+              <div class="header-cell">{{#if is_en}}Both Sexes Equivalent{{else}}전체 등분위{{/if}}</div>
+              <div class="body-cell" id="ictb-fb-1"></div>
+              <div class="body-cell" id="ictb-fb-2"></div>
+              <div class="body-cell" id="ictb-fb-3"></div>
+              <div class="body-cell" id="ictb-fb-4"></div>
+              <div class="body-cell" id="ictb-fb-5"></div>
+              <div class="body-cell" id="ictb-fb-6"></div>
+              <div class="body-cell" id="ictb-fb-7"></div>
+              <div class="body-cell" id="ictb-fb-8"></div>
+              <div class="body-cell" id="ictb-fb-9"></div>
+              <div class="body-cell" id="ictb-fb-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-m">
+              <div class="header-cell">{{#if is_en}}Male{{else}}남성{{/if}}</div>
+              <div class="body-cell" id="ictb-m-1"></div>
+              <div class="body-cell" id="ictb-m-2"></div>
+              <div class="body-cell" id="ictb-m-3"></div>
+              <div class="body-cell" id="ictb-m-4"></div>
+              <div class="body-cell" id="ictb-m-5"></div>
+              <div class="body-cell" id="ictb-m-6"></div>
+              <div class="body-cell" id="ictb-m-7"></div>
+              <div class="body-cell" id="ictb-m-8"></div>
+              <div class="body-cell" id="ictb-m-9"></div>
+              <div class="body-cell" id="ictb-m-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-mf">
+              <div class="header-cell">{{#if is_en}}Female Equivalent{{else}}여성 수입 백분위{{/if}}</div>
+              <div class="body-cell" id="ictb-mf-1"></div>
+              <div class="body-cell" id="ictb-mf-2"></div>
+              <div class="body-cell" id="ictb-mf-3"></div>
+              <div class="body-cell" id="ictb-mf-4"></div>
+              <div class="body-cell" id="ictb-mf-5"></div>
+              <div class="body-cell" id="ictb-mf-6"></div>
+              <div class="body-cell" id="ictb-mf-7"></div>
+              <div class="body-cell" id="ictb-mf-8"></div>
+              <div class="body-cell" id="ictb-mf-9"></div>
+              <div class="body-cell" id="ictb-mf-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-mb">
+              <div class="header-cell">{{#if is_en}}Both Sexes Equivalent{{else}}전체 등분위{{/if}}</div>
+              <div class="body-cell" id="ictb-mb-1"></div>
+              <div class="body-cell" id="ictb-mb-2"></div>
+              <div class="body-cell" id="ictb-mb-3"></div>
+              <div class="body-cell" id="ictb-mb-4"></div>
+              <div class="body-cell" id="ictb-mb-5"></div>
+              <div class="body-cell" id="ictb-mb-6"></div>
+              <div class="body-cell" id="ictb-mb-7"></div>
+              <div class="body-cell" id="ictb-mb-8"></div>
+              <div class="body-cell" id="ictb-mb-9"></div>
+              <div class="body-cell" id="ictb-mb-10"></div>
+            </div>
+            
+            <div class="body_column" id="ictb-b">
+              <div class="header-cell">{{#if is_en}}Both Sexes{{else}}전체{{/if}}</div>
+              <div class="body-cell" id="ictb-b-1"></div>
+              <div class="body-cell" id="ictb-b-2"></div>
+              <div class="body-cell" id="ictb-b-3"></div>
+              <div class="body-cell" id="ictb-b-4"></div>
+              <div class="body-cell" id="ictb-b-5"></div>
+              <div class="body-cell" id="ictb-b-6"></div>
+              <div class="body-cell" id="ictb-b-7"></div>
+              <div class="body-cell" id="ictb-b-8"></div>
+              <div class="body-cell" id="ictb-b-9"></div>
+              <div class="body-cell" id="ictb-b-10"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="l12 m12 s12">
+      <br /><br />
+      <h3>
+        {{#if is_en}}
+          Equivalent Percentile Calculator
+        {{else}}
+          등위 백분위수 계산기
+        {{/if}}
+      </h3>
+    </div>
+    <div class="l12 m12 s12">
+        {{#if is_en}}
+          Enter your yearly income in USD.
+        {{else}}
+          연간 수입을 미국 달러(USD)로 입력해주세요.
+        {{/if}}
+      <br /><br />
+      <input type="number" id="by_calc_input" />
+      <button id="by_calc_submit">{{#if is_en}}Submit{{else}}입력{{/if}}</button>
+    </div>
+    <div class="l12 m12 s12">
+      <br /><br />
+      {{#if is_en}}
+        Your income level when you are ...
+      {{else}}
+        당신이 ...일 때 소득 수준은
+      {{/if}}
+    </div>
+    <div class="l4 m12 s12" id="by_calc_bars">
+      <h4>{{#if is_en}}Female{{else}}여성{{/if}}</h4>
+      <div id="by_calc_result_f"><div class="bar"></div><div class="value"></div></div>
+    </div>
+    <div class="l4 m12 s12">
+      <h4>{{#if is_en}}Male{{else}}남성{{/if}}</h4>
+      <div id="by_calc_result_m"><div class="bar"></div><div class="value"></div></div>
+    </div>
+    <div class="l4 m12 s12">
+      <h4>{{#if is_en}}Both Sexes{{else}}전체{{/if}}</h4>
+      <div id="by_calc_result_b"><div class="bar"></div><div class="value"></div></div>
+    </div>
+    
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="/wpmy/js/wpmy_utility.js"></script>
+<script src="/wpmy/js/bycountry_control.js"></script>
+<script>
+  create_country_list('#country_list', '#cmp_area', "{{ln}}")
+  $('.sublist_foldable')
+    .on('mouseover', function() { $(this).attr('data-open', 'true') })
+    .on('mouseout', function() { $(this).attr('data-open', 'false') });
+  
+  $('#by_calc_submit')
+    .click(function() {
+      let v = parseInt($('#by_calc_input').val())
+      by_calculator(v)
+    })
+</script>

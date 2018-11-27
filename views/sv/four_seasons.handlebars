@@ -1,0 +1,101 @@
+
+<!--three.js-->
+<script src="/sv/four_seasons/three.min.js"></script>
+<script src="/sv/four_seasons/three_detector.js"></script>
+<!--data, controller-->
+<script src="/sv/four_seasons/data.js"></script>
+<script src="/sv/four_seasons/data_points.js"></script>
+<script src="/sv/four_seasons/control.js"></script>
+<script src="/sv/four_seasons/OrbitControls.js"></script>
+<script src="/sv/four_seasons/data5.js"></script>
+<script src="/sv/four_seasons/story.js"></script>
+
+<!--section title-->
+<div id="section-title" class="container">
+  <div class="row">
+    <div class="col s12 m7 l7">
+      <h1>서울의 사계절</h1>
+    </div>
+    <div class="col s12 m5 l5">
+      <p class="grey-text text-darken-2">
+        야외에서 숨 쉬기 좋은 날은 이제 서울에서 찾기 어려워졌다. '서울의 사계절'은 서울의 미세먼지와 기온 데이터를 바탕으로, 봄/여름/가을/겨울이 아닌 미세먼지/폭염/환절기/혹한이라는 사계절로 서울의 계절을 구분해보았다. 번호를 누르면 각 계절별로 설명과 그래프, 그리고 관련된 기후 현상에 대해서 확인해볼 수 있다.
+      </p>
+      <p class="grey-text text-darken-1">
+        출처: <a href="http://sts.kma.go.kr/jsp/home/contents/main/main.do" target="_blank">기상청 국가기후데이터(기온, 강수)</a>,
+        <a href="http://cleanair.seoul.go.kr/main.htm" target="_blank">서울특별시 대기환경정보(미세먼지)</a>
+      </p>
+    </div>
+  </div><!--row ends-->
+</div><!--header ends-->
+
+<!--content-->
+<div id="content" class="container">
+  <div id="storytelling" class="row">
+
+    <div id="story-control" class="col s12 m12 l12">
+      <ul id="story-control-box" class="tab-box">
+        <li onclick="toggle_story(1)">1</li>
+        <li onclick="toggle_story(2)">2</li>
+        <li onclick="toggle_story(3)">3</li>
+        <li onclick="toggle_story(4)">4</li>
+      </ul>
+    </div>
+
+    <div id="story-text" class="col s12 m12 l12">
+      <div id="story-text-wrap" fold="true">
+        <h3 id="story-text-title">1. 스토리 제목</h3>
+        <div id="story-text-content">
+          <p class="grey-text text-darken-3">스토리 내용</p>
+        </div>
+      </div>
+      <div id="fold" onclick="story_text_fold()">
+        <a href="#story-anchor"><i class="fa fa-angle-down" aria-hidden="true"></i>&nbsp;&nbsp;더보기</a>
+      </div>
+    </div>
+
+    <div id="story-visual" class="col s12 m12 l12">
+    </div>
+
+    <div id="story-tooltip-area" class="col s12 m12 l12">
+    </div>
+
+    <div id="story-mode" class="col s12 m12 l12">
+      <ul id="story-mode-box" class="tab-box">
+        <li class="temperature" onclick="select_mode(1)">기온</li>
+        <li class="fine_dust" onclick="select_mode(2)">미세먼지</li>
+      </ul>
+    </div>
+
+  </div>
+  <script>
+  $( initiate_story() );
+  </script>
+
+  <div id="threeD-graph" class="row">
+    <div class="col s12 m12 l12">
+      <h4>3D 그래프로 보기</h4>
+      <p class="grey-text text-darken-3">
+        드래그 앤 드랍을 통해 그래프를 돌려보고, 스크롤을 통해 그래프를 확대/축소 할 수 있습니다.
+      </p>
+    </div>
+
+    <div id="graph-whole" class="col s12 m12 l12">
+    </div>
+
+    <div id="graph-legend" class="col s12 m12 l12">
+    </div>
+  </div>
+  <div id="scale" class="row">
+    <div class="col s12 m12 l12">
+      미세먼지 지수 범례 <img src="/sv/four_seasons/scale.png" />
+    </div>
+  </div>
+</div><!--content ends-->
+<script>
+$( initiate_webgl() );
+$( render() );
+</script>
+
+
+
+<div id="grad"></div>

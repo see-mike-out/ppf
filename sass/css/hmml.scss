@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+$lg: 1000px;
+$md: 500px;
+
+$red: #e04251;
+$green: #008751;
+
+body, html {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+div {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+
+header {
+  @media screen and (min-width: $lg) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  @media screen and (max-width: $lg) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: $md) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: sticky;
+  }
+  #go_to_root {
+    text-align: left;
+    line-height: 100%;
+    width: 100%;
+    @media screen and (min-width: $lg) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: $lg) {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+    a {
+      color: #222;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #main_logo {
+    text-align: left;
+    line-height: 100%;
+    width: 100%;
+    @media screen and (min-width: $lg) {
+      font-size: 40px;
+    }
+    @media screen and (max-width: $lg) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 25px;
+    }
+    a {
+      color: $red;
+      text-decoration: none;
+      transition: .3s;
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  #main_nav {
+    line-height: 100%;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    a {
+      color: #222;
+      text-decoration: none;
+      transition: .3s;
+      display: inline-block;
+      &:hover {
+        color: $red;
+      }
+    }
+    @media screen and (min-width: $lg) {
+      font-size: 20px;
+      padding: 34px 0 16px 0;
+      a {
+        margin-right: 20px;
+        height: 30px;
+      }
+    }
+    @media screen and (max-width: $lg) {
+      font-size: 18px;
+      padding: 15px 0 25px 0;
+      a {
+        margin-right: 15px;
+        height: 25px;
+      }
+    }
+    @media screen and (max-width: $md) {
+      font-size: 16px;
+      padding: 15px 0 5px 0;
+      a {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+footer {
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  .container .row {
+    div {
+      width: 100%;
+      text-align: center;
+    }
+    @media screen and (min-width: $lg) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $lg) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 12px;
+    }
+  }
+}
+
+p.paragraph {
+  line-height: 160%;
+  color: #333;
+  @media screen and (min-width: $lg) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: $lg) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $md) {
+    font-size: 16px;
+  }
+}
+
+p.helper {
+  line-height: 160%;
+  color: #999;
+  @media screen and (min-width: $lg) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $lg) {
+    font-size: 13px;
+  }
+  @media screen and (max-width: $md) {
+    font-size: 13px;
+  }
+}
+
+//headings 
+h1, h2, h3, h4 {
+  line-height: 100%;
+}
+h1 {
+  font-weight: 500;
+  @media screen and (min-width: $lg) {
+    margin: 15px 0 30px 0;
+    font-size: 30px;
+  }
+  @media screen and (max-width: $lg) {
+    margin: 10px 0 25px 0;
+    font-size: 27px;
+  }
+  @media screen and (max-width: $md) {
+    margin: 5px 0 20px 0;
+    font-size: 25px;
+  }
+}
+h2 {
+  font-weight: 500;
+  @media screen and (min-width: $lg) {
+    margin: 5px 0 20px 0;
+    font-size: 20px;
+  }
+  @media screen and (max-width: $lg) {
+    margin: 3px 0 17px 0;
+    font-size: 19px;
+  }
+  @media screen and (max-width: $md) {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+  }
+}
+
+//list
+.content-list {
+  line-height: 160%;
+  padding: 0 0 0 15px;
+  margin: 0 0 15px 0;
+  @media screen and (min-width: $lg) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: $lg) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: $md) {
+    font-size: 16px;
+  }
+  strong {
+    font-weight: 600;
+  }
+  li {
+    margin: 0 0 15px 0;
+    margin: 0;
+    ul {
+	    padding: 0 0 0 30px;
+    }
+  }
+}
+
+//sublist
+.sublist_foldable {
+  overflow: hidden;
+  line-height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  transition: .3s;
+  z-index: 999;
+  .folder {
+    overflow: hidden;
+  }
+  
+  @media screen and (min-width: $lg) {
+    position: absolute;
+    margin: 9px 0 24px 0;
+    width: 400px;
+    &.multiple {
+      width: 300px;
+      &:nth-child(2) {
+        left: 350px;
+      }
+    }
+  }
+  @media screen and (max-width: $lg) {
+    margin: 5px 0 20px 0;
+    width: 100%;
+  }
+  @media screen and (max-width: $md) {
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+  span {
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+    @media screen and (min-width: $lg) {
+      //height: 42px;
+      font-size: 18px;
+      padding: 12px 12px;
+    }
+    @media screen and (max-width: $lg) {
+      //height: 37px;
+      font-size: 17px;
+      padding: 10px 11px;
+    }
+    @media screen and (max-width: $md) {
+      //height: 35px;
+      font-size: 15px;
+      padding: 10px 10px;
+    }
+    &:hover,
+    &[data-selected=true] {
+      background-color: #f3f3f3;
+    }
+    &[data-selected=false] {
+      background-color: transprent;
+    }
+  }
+  &[data-open=false] {
+    @media screen and (min-width: $lg) {
+      height: 42px;
+      .folder {
+        height: 42px;
+      }
+    }
+    @media screen and (max-width: $lg) {
+      height: 37px;
+      .folder {
+        height: 37px;
+      }
+    }
+    @media screen and (max-width: $md) {
+      height: 35px;
+      .folder {
+        height: 35px;
+      }
+    }
+  }
+  &[data-open=true] {
+    height: auto;
+    max-height: 65vh;
+    overflow-y: scroll;
+    .folder {
+      height: auto;
+    }
+  }
+}
+
+.content-wrap.mob-rel {
+  @media screen and (min-width: $lg) {
+    position: absolute;
+  }
+  @media screen and (max-width: $lg) {
+    position: relative;
+  }
+  @media screen and (max-width: $md) {
+    position: relative;
+  }
+}
+
+.table_note {
+  position: fixed;
+  z-index: 999;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  @media screen and (min-width: $lg) {
+    font-size: 14px;
+    padding: 15px;
+  }
+  @media screen and (max-width: $lg) {
+    font-size: 13px;
+    padding: 12px;
+  }
+  @media screen and (max-width: $md) {
+    font-size: 11px;
+    padding: 9px;
+  }
+}
+
+h2.table_title {
+  color: $green;
+  padding-bottom: 7px;
+  border-bottom: 3px solid;
+  display: inline-block;
+  margin-bottom: 0;
+}
+//table
+#table_area {
+  overflow-x: scroll;
+  width: auto;
+  table {
+    width: auto;
+    white-space: nowrap;
+    border-spacing: 0;
+    border-collapse: collapse;
+    td {
+      border: 1px solid #ddd;
+      text-overflow: ellipsis;
+      line-height: 100%;
+      @media screen and (min-width: $lg) {
+        font-size: 13px;
+        padding: 5px;
+      }
+      @media screen and (max-width: $lg) {
+        font-size: 12px;
+        padding: 4px;
+      }
+      @media screen and (max-width: $md) {
+        font-size: 11px;
+        padding: 3px;
+      }
+      &[data-type='text'] { text-align: left; }
+      &[data-type='number'] { text-align: right; font-family: 'Roboto Mono', monospace; }
+      &[data-type='aux'] { text-align: center; }
+      a {
+        color: $green;
+      }
+    }
+    thead {
+      td {
+        background-color: rgba(224, 66, 81, 0.1);
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(0, 135, 81, 0.3);
+        }
+      }
+    }
+  }
+}
+
+.graph-wrap {
+  position: relative;
+}
+#graph_area,
+#plot_area {
+  svg {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .axis-name {
+    fill: $red;
+  }
+}
+#graph_area {
+  .tick line,
+  .domain {
+    stroke: #999;
+  }
+}
+#plot_area {
+  * {
+    transition: .3s;
+  }
+  .tick line,
+  .domain {
+    stroke: #ddd;
+  }
+  .dot-hl {
+    stroke: grey;
+    fill: rgba(0, 0, 0, 0.2);
+  }
+  .dot-hl:hover {
+    stroke: $red;
+    fill: rgba(224, 66, 81, 0.2);
+  }
+}
+#graph_tooltip {
+  &[data-show=false] {
+    display: none;
+  }
+  &[data-show=true] {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @media screen and (min-width: $lg) {
+      font-size: 14px;
+      padding: 5px;
+    }
+    @media screen and (max-width: $lg) {
+      font-size: 12px;
+      padding: 5px;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 12px;
+      padding: 4px;
+    }
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    span {
+      display: block;
+      line-height: 100%;
+      color: #454545;
+      &.name { 
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      &.value {
+        font-weight: 300;
+        &.value.x {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+//cmp
+#cmp_area {
+  &[data-show=false] {
+    display: none;
+  }
+  &[data-show=true] {
+    display: block;
+  }
+  .cmp_section {
+    width: 100%;
+    display: flex;
+    
+    @media screen and (min-width: $lg) {
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: $lg) {
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: $md) {
+      margin-bottom: 30px;
+    }
+    .cmp_subsection {
+      width: 33.3%;
+      margin: 0;
+      display: block;
+      .cmp_bars {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        @media screen and (min-width: $lg) {
+          height: 150px;
+          padding: 0 100px;
+        }
+        @media screen and (max-width: $lg) {
+          height: 100px;
+          padding: 0 70px;
+        }
+        @media screen and (max-width: $md) {
+          height: 90px;
+          padding: 0 40px;
+        }
+        .cmp_bar_1,
+        .cmp_bar_2 {
+          width: 50%;
+          position: relative;
+          box-sizing: border-box;
+          .cmp_bar {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+          }
+        }
+        .cmp_bar_1 {
+          .cmp_bar {
+            background-color: $red;
+            @media screen and (min-width: $lg) {
+              left: -10px;
+            }
+            @media screen and (max-width: $lg) {
+              left: -8px;
+            }
+            @media screen and (max-width: $md) {
+              left: -5px;
+            }
+          }
+          @media screen and (min-width: $lg) {
+            padding-right: 10px;
+          }
+          @media screen and (max-width: $lg) {
+            padding-right: 8px;
+          }
+          @media screen and (max-width: $md) {
+            padding-right: 5px;
+          }
+        }
+        .cmp_bar_2 {
+          .cmp_bar {
+            background-color: $green;
+            @media screen and (min-width: $lg) {
+              right: -10px;
+            }
+            @media screen and (max-width: $lg) {
+              right: -8px;
+            }
+            @media screen and (max-width: $md) {
+              right: -5px;
+            }
+          }
+          @media screen and (min-width: $lg) {
+            padding-left: 10px;
+          }
+          @media screen and (max-width: $lg) {
+            padding-left: 8px;
+          }
+          @media screen and (max-width: $md) {
+            padding-left: 5px;
+          }
+        }
+      }
+      .cmp_bar_names {
+        width: 100%;
+        display: flex;
+        @media screen and (min-width: $lg) {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+        @media screen and (max-width: $lg) {
+          margin-top: 8px;
+          font-size: 13px;
+        }
+        @media screen and (max-width: $md) {
+          margin-top: 8px;
+          font-size: 13px;
+        }
+        .cmp_name_1,
+        .cmp_name_2 {
+          width: 50%;
+          .cmp_name {
+            color: #333;
+            font-weight: 500;
+          }
+          .cmp_value {
+            color: #666;
+            font-weight: 300;
+          }
+        }
+        .cmp_name_1 {
+          text-align: right;
+          @media screen and (min-width: $lg) {
+            padding-right: 10px;
+          }
+          @media screen and (max-width: $lg) {
+            padding-right: 8px;
+          }
+          @media screen and (max-width: $md) {
+            padding-right: 5px;
+          }
+        }
+        .cmp_name_2 {
+          text-align: left;
+          @media screen and (min-width: $lg) {
+            padding-left: 10px;
+          }
+          @media screen and (max-width: $lg) {
+            padding-left: 8px;
+          }
+          @media screen and (max-width: $md) {
+            padding-left: 5px;
+          }
+        }
+      }
+      .cmp_bar_title {
+        @media screen and (min-width: $lg) {
+          margin-top: 10px;
+          font-size: 16px;
+        }
+        @media screen and (max-width: $lg) {
+          margin-top: 8px;
+          font-size: 13px;
+        }
+        @media screen and (max-width: $md) {
+          margin-top: 8px;
+          font-size: 13px;
+        }
+        color: #333;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.download-wrap {
+  box-sizing: border-box;
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .item {
+      width: 230px;
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: $lg) {
+    display: block;
+    .item {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: $md) {
+    display: block;
+    .item {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+  }
+  .item {
+    border: 1px solid #ddd;
+    span {
+      display: block;
+      &.title {
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      &.desc {
+        font-weight: 100;
+        color: #666;
+        margin-bottom: 20px;
+      }
+    }
+    a {
+      display: block;
+      background-color: lightgrey;
+      transition: .3s;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        background-color: $red;
+      }
+      @media screen and (min-width: $lg) {
+        padding: 10px;
+      }
+      @media screen and (max-width: $lg) {
+        padding: 8px;
+      }
+      @media screen and (max-width: $md) {
+        padding: 5px;
+      }
+    }
+  }
+}

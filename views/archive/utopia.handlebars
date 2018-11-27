@@ -1,0 +1,139 @@
+<section id="lstoss" class="doc">
+  <div class="container">
+    <div class="row">
+      <div class="l12 m12 s12">
+        <h2 class="comb">Works > Web Development</h2>
+        <h1>Utopia - A Web App for Energy Education</h1>
+        <p>
+          Utopia is a web app for energy education. My team developed user-side and provider-side sub-apps.
+          This app features an energy diary, a web comics with audio autoplay, and a book viewer system.
+        </p>
+        <p><strong>Period</strong> July 2017 - Aug 2018</p>
+        <p><strong>My Role</strong> Director, Front-end Developer</p>
+        <p><strong>Client</strong> Plant (sponsored by Samsung)</p>
+        <p><strong>Designer</strong> Cindy Oh</p>
+        <p><strong>Back-end Developer</strong> Jinsu Eun (Ruby on Rails)</p>
+      </div>
+    </div>
+    
+    <!-- Concept & Communication -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Concept & Communication</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_main.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>This project was requested by a energy education start-up, Plant. Since they had only an overall plan for this project,
+        it was our mission to effectively adjust its scale and specify which features to include. This indicates that my role 
+        as a director was important. I treid to suggest realistic plans with the client's limited resource. For example, 
+        their original plan was to operate a competitive system based on users's energy usage. However, I and the back-end developer 
+        discovered that they had limited time and computing resource to implement and run such system, and it had also legal issue 
+        regarding collecting personal information. Hence, we suggested an enhanced monitoring and sharing system.</p>
+        <p>Another issue was its design. This project was planed as a serious game for young students, yet the client's ideas were
+        less likely to be a game. Thus, the client wants its appearance to look like a game, which demanded the designer to investigate
+        game design. There were several options and took a long time to fix this current idea.</p>
+      </div>
+    </div>
+    
+    <!-- Energy Diary -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Energy Diary</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_diary.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>The energy diary is the main feature of this project. Users can make a record of their daily energy use by entering 
+        their time of use appliacne, transportaion, and network. Each card in diary represent the energy usage of the corresponding 
+        sector, and users can unfold and fold these cards for detail usage.</p>
+        <p>Since this application was planned to be distrubted through web, it was key to provide them both on desktop and mobile devices. 
+        Adding a new record is important to this kind of applications, so the add button (red button) needed to be always accessible. 
+        If its position in the desktop version is maintained on the mobile version, it becomes less visible 
+        due to the extended scroll length. So, I decided to adopt a different type of interface while keeping its visual style.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Energy Diary Monitoring -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Monitoring Energy Diary</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_monitoring.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>This project was for educating energy issues and making young students use less amount of energy. This required a monitoring panel 
+        for reminding users how much energy they used.</p>
+      </div>
+    </div>
+    
+    <!-- Tutorial for Energy Diary -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Energy Diary Tutorial</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_tutorial.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>A step-by-step tutorial was necessary to spread this application among elementary students because they are less familiar 
+        with use a new computer application. Thus, this tutorial was provided to first-time users.</p>
+        <p>In order to make this tutorial effective, hihglighting focused objects and dehighlighting the others were needed at each 
+        step. While keeping original interface and back-end functions, I should precisely control CSS by JavaScript and HTML. 
+        Also, the text description had to be comprehensible for young students, so I discussed this issue internally with the teammates 
+        and consulted with the client.</p>
+      </div>
+    </div>
+    
+    <!-- Web-comics with Audio Autoplay -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Web Comics with Audio Autoplay</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_webtoon.png" />
+        <br /><br /><br /><br /><br /><br />
+        <img src="/img/utopia/utopia_webtoon_manager.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>The client demanded us to provide a web comics (webtoon) with audio autoplay, which means that audio clips (e.g. background music,
+        and sound effects) are automatically played at their preset positions as reading comics. This was because their project was 
+        initiated this web comics series and already prepared some audio tracks for the comics. This way of presenting comics 
+        was famous in the Korean web comics market, but not in the world-wide scale. This meant that there were no open source 
+        library for this feature, and I had to develop from the scratch because it belonged to front-end development.</p>
+        <p>Thus, I added invisible grid over comics images for audio cues and utilized scroll event of JavaScript 
+        so that audio tracks are played and stopped at their desired scroll position. There were two issues when adopting this grid system.
+        First, the interval of the audio cue grid had to be relative because the absolute size of web comics changed according to screen size. 
+        Second, the appropriate interval of the grid needed to be decided because if it were too fine, it would be difficult for authors 
+        to control the system, otherwise, it would be less timely. Therefore, after few demo test, 
+        I set the grid size as 100px when the width is 1000px.</p>
+        <p>Another concern was to offer provider-side interface because the author of the web comics were also the user of this app. 
+        When registering a new episode, the author first upload the image files of the episode and audio tracks. Then, in another 
+        page (the second screenshot), the images are rendered and the grid is visibly overlaid. The interactive dialog box
+        at the bottom side allows the author to select the starting and ending points of each audio track, and those points 
+        appear on the grid. Fading option was also available for fluent transition of audio tracks.</p>
+      </div>
+    </div>
+    
+    <!-- A Web-Frinedly Book Viewer System -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Web-friendly Book Viewer</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/utopia/utopia_book.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>More descriptive contents were provided through textbooks developed by the client. Our issue was how to provide the textbooks
+        on both desktop and mobile. The client wanted a page-turn effect, and zooming must be available for user convenience.
+        Moreover, they all had to be web-friendly (without third-party application) for mobile service. Therefore, I made use of 
+        <a href="http://www.turnjs.com/" target="_blank">turn.js</a> which is an open-source JavaScript library.</p>
+      </div>
+    </div>
+    
+  </div>
+</section>

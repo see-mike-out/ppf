@@ -1,0 +1,133 @@
+<section id="lstoss" class="doc">
+  <div class="container">
+    <div class="row">
+      <div class="l12 m12 s12">
+        <h2 class="comb">Works > Web Development</h2>
+        <h1>SNU Card NewsBot</h1>
+        <p>
+          SNU Card NewsBot is a automated slide news service for the 7th local election of South Korea. Slide news (or card news) is 
+          a pervasive snack news format in South Korea due to its convenience and low amount of data usage. Users can swipe 
+          news slides horizontally to read more news. However, generating quality slide news is challenging because it demands another way
+          of involving visualization, verbal messages, layout design, and storytelling at once. Thus, my team applied robot journalism 
+          technology to automate this process. In addition, this automation process was also personalized, which was wonderfully done by 
+          the text-generation team. Because people have different concerns about local elections, automated personlization was an appropriate 
+          choice to cope with those diverse needs of users.
+        </p>
+        <p>
+          In this project, my main job was to render news slides from raw JSON source. To do this, I first organized API output format to 
+          effectively communicate with the back-end and data management team. Then, I implemented a front-end API to render news slides from 
+          data in the API format. In addition, another mission was to design and implement a webstie to reach to general audience. In this 
+          case, I applied a card UI for two reasons. First, higher fluidity of the elements was needed because the end-product (a web app) 
+          should be available on desktops and smartphones. Second, there was demanded a user interface that was appropriate for both lists of 
+          news articles and contorl panels for personalization.
+        </p>
+        <p><strong>Period</strong> Jan 2017 - May 2017</p>
+        <p><strong>My Role</strong> Front-end Developer and Designer</p>
+        <p><strong>Director</strong> Prof. Joonhwan Lee and Prof. Bongwon Suh</p>
+        <p><strong>Back-end Developer</strong> Joonseok Kim, Sion Baek, and Jinho Seo</p>
+        <p><strong>Database Management</strong> Gibeom Park and Jinhan Choi</p>
+        <p><strong>Text Generation</strong> Sanghyuk Lee (chief), Youjin Hwang, Seongmin Park, Younah Ahn, and Woobin Choi</p>
+        <p>This project was granted by <a href="https://www.iitp.kr/main.it" target="_blank">IITP (Institute for Information and Communications Technology Promotion)</a></p>
+      </div>
+    </div>
+    
+    <!-- Demo Video -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Demo Video</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TzF42Ak_B9c" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          Video made by me with Keynote.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Card Rendering API -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Card Rendering API</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/snucardnewsbot/snucardnewsbot_api.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          To make the system reusable and reduce the back-end process time, card rendering had to be done on the front-end side. 
+          Thus, I designed various layouts based on previous slide news works and obtained a reusable and extendible data format that 
+          works for various slide formats. Major types of information elements were text, image, graph visualization, comparison data, 
+          and map visualization. To make the API generalizable, I let various methods able to be joined to the core generating method. 
+          For example, the core method sets position and size, and then each corresponding method generates the content. I also utilized 
+          <a href="https://vuejs.org/" target="_blank">vue.js</a> as a front-end framework.
+        </p>
+      </div>
+    </div>
+    
+    <!-- API I/O structure -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>API I/O Structure</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/snucardnewsbot/snucardnewsbot_io.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          To fully utilize the card rendering API, it was key to set an API I/O structure. I requested the data management team to provide 
+          card layout type (e.g. map+text, vis+text, text, image, cover, and closing)  and information element types (i.e. text, image, vis) 
+          for each slide. Then, I matched those types to the card rendering API language.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Card UI -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Card UI</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <strong>Main Page</strong><br /><br />
+        <img src="/img/snucardnewsbot/snucardnewsbot_ui_3.png" />
+        <br /><br /><br /><br />
+        <strong>News Slide Viewer (using <a href="http://kenwheeler.github.io/slick/" target="_blank">slick.js</a>) </strong><br /><br />
+        <img src="/img/snucardnewsbot/snucardnewsbot_ui_4.png" />
+        <br /><br /><br /><br />
+        <strong>Personalization Setting Page</strong><br /><br />
+        <img src="/img/snucardnewsbot/snucardnewsbot_ui_2.png" />
+        <br /><br /><br /><br />
+        <strong>Archive</strong><br /><br />
+        <img src="/img/snucardnewsbot/snucardnewsbot_ui_1.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          Fluidity lied on the core of the app design in order to deal with various device types. For example, the confirm button could 
+          be placed on top because the space is large and the button was highly accessible at that position. However, it should be at the 
+          bottom of the page on its mobile version to lead users to discover various personalization features. Another concern was to 
+          provide various elements (articles, control panels, and alert messages) in a consistent format. The card UI was also effective 
+          because many of the control panels had to be foldable. 
+        </p>
+      </div>
+    </div>
+    
+    <!-- Concept Art -->
+    <div class="row archive_section">
+      <div class="l12 m12 s12">
+        <h3>Concept Art</h3>
+      </div>
+      <div class="l8 m12 s12">
+        <img src="/img/snucardnewsbot/snucardnewsbot_concept.png" />
+      </div>
+      <div class="l4 m12 s12">
+        <p>
+          The contents of news slides were highly political, so using image was not very easy. Thus, I created various illustrations in 
+          order to vividly provide news contents.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</section>

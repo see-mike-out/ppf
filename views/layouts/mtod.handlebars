@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Town + Our Diversity - Mike Project</title>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  
+  {{#equal mtod_sub "browse" }}
+  <script src="https://d3js.org/d3-array.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.js"></script>
+  <script src="/mtod/use_data/nationality_data.json"></script>
+  <script src="/mtod/use_data/disability_data.json"></script>
+  <script src="/mtod/use_data/age_data.json"></script>
+  <script src="/mtod/use_data/gender_data.json"></script>
+  <script src="/mtod/use_data/residence_data.json"></script>
+  <script src="/mtod/use_data/industry_data.json"></script>
+  <script src="/mtod/use_data/region_tree.json"></script>
+  <script src="/mtod/use_data/data_sheet.json"></script>
+  <script src="/mtod/use_data/presets.json"></script>
+  <script src="/mtod/use_data/rowname.json"></script>
+  <script src="/mtod/js/engine.js" charset="utf-8"></script>
+  <script src="/mtod/js/color_convert.js"></script>
+  <script src="/mtod/js/show_entire.js"></script>
+  <script src="/mtod/js/show_nationality.js"></script>
+  <script src="/mtod/js/show_disability.js"></script>
+  <script src="/mtod/js/show_gender.js"></script>
+  <script src="/mtod/js/show_residence.js"></script>
+  <script src="/mtod/js/show_industry.js"></script>
+  <script src="/mtod/js/show_age.js"></script>
+  <script src="/mtod/js/text_writer.js"></script>
+  {{/equal}}
+  {{#equal mtod_sub "map" }}
+  <script src="/mtod/map/map_data_metro.json"></script>
+  <script src="/mtod/map/map_data_regional.json"></script>
+  <script src="/mtod/use_data/data_sheet.json"></script>
+  <script src="/mtod/use_data/presets.json"></script>
+  <script src="/mtod/js/map.js"></script>
+  <script src="/mtod/js/color_convert.js"></script>
+  {{/equal}}
+  {{#equal mtod_sub "table" }}
+  <script src="/mtod/use_data/data_sheet.json"></script>
+  <script src="/mtod/use_data/presets.json"></script>
+  <script src="/mtod/use_data/region_tree.json"></script>
+  <script src="/mtod/js/table.js"></script>
+  {{/equal}}
+  <script src="/mtod/js/utility.js"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  {{#equal mtod_sub "intro" }}
+  <link rel="stylesheet" media="screen and (min-width:1250px)" type="text/css" href="/mtod/css/intro.css" />
+  <link rel="stylesheet" media="screen and (max-width:1249px)" type="text/css" href="/mtod/css/intro.m.css" />
+  {{/equal}}
+  {{#equal mtod_sub "browse" }}
+  <link rel="stylesheet" media="screen and (min-width:1250px)" type="text/css" href="/mtod/css/browse.css" />
+  <link rel="stylesheet" media="screen and (max-width:1249px)" type="text/css" href="/mtod/css/browse.m.css" />
+  {{/equal}}
+  {{#equal mtod_sub "map" }}
+  <link rel="stylesheet" media="screen and (min-width:1250px)" type="text/css" href="/mtod/css/map.css" />
+  <link rel="stylesheet" media="screen and (max-width:1249px)" type="text/css" href="/mtod/css/map.m.css" />
+  {{/equal}}
+  {{#equal mtod_sub "table" }}
+  <link rel="stylesheet" media="screen and (min-width:1250px)" type="text/css" href="/mtod/css/table.css" />
+  <link rel="stylesheet" media="screen and (max-width:1249px)" type="text/css" href="/mtod/css/table.m.css" />
+  {{/equal}}
+  <script>
+    function setShareLinkFb() {
+      shareFb("My Town Our Diversity", location.href);
+    }
+
+    function setShareLinkTw() {
+      shareTw("My Town Our Diversity", location.href);
+    }
+
+    function setShareLinkUrl() {
+      shareUrl(location.href);
+    }
+  </script>
+</head>
+{{#if is_mtod_intro }}
+<body onload="makeTopButton()">
+{{else}}
+<body onload="global(); makeTopButton()">
+{{/if}}
+  <div id="wrap">
+    <div id="current-area"></div>
+    <div id="header-wrap">
+      <div id="mike-project"><a href="/">MIKE PROJECT</a></div>
+      <div id="project-name"><a href="/mytownourdiversity">MY TOWN + OUR DIVERSITY</a></div>
+      <div id="documentation">
+        <a href="/mytownourdiversity">소개</a>
+        <a href="/mytownourdiversity/browse">찾아보기</a>
+        <a href="/mytownourdiversity/map">지도</a>
+        <a href="/mytownourdiversity/table">자료</a>
+        <a href="#" onclick="setShareLinkTw()"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" onclick="setShareLinkUrl()"><i class="fa fa-share" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    {{{body}}}
+    <div id="copy" class="col-md-12 col-xs-12">
+      <h5>&copy; 2017 MIKE PROJECT</h5>
+      <p></p>
+      <p>화면이 제대로 보이지 않는 경우 새로고침해주세요.</p>
+      <p></p>
+      <p>Work of a Feminist</p>
+    </div>
+  </div>
+</body>
+</html>
